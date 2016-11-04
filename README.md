@@ -2,6 +2,7 @@ Ansible Role: Visual Studio Code Extensions
 ===========================================
 
 [![Build Status](https://travis-ci.org/gantsign/ansible-role-visual-studio-code-extensions.svg?branch=master)](https://travis-ci.org/gantsign/ansible-role-visual-studio-code-extensions)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.visual--studio--code--extensions-blue.svg)](https://galaxy.ansible.com/gantsign/visual-studio-code-extensions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-visual-studio-code-extensions/master/LICENSE)
 
 Role to install extensions for the
