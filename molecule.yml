@@ -1,0 +1,15 @@
+---
+docker:
+  containers:
+
+      - name: ansible-role-visual-studio-code-extensions-01
+        image: ubuntu
+        image_version: latest
+        ansible_groups:
+          - group1
+
+      - name: ansible-role-visual-studio-code-extensions-02
+        image: ubuntu
+        image_version: latest
+        ansible_groups:
+          - group1
