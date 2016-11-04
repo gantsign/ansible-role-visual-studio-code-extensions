@@ -1,38 +1,100 @@
-Role Name
-=========
+Ansible Role: Visual Studio Code Extensions
+===========================================
 
-A brief description of the role goes here.
+[![Build Status](https://travis-ci.org/gantsign/ansible-role-visual-studio-code-extensions.svg?branch=master)](https://travis-ci.org/gantsign/ansible-role-visual-studio-code-extensions)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-visual-studio-code-extensions/master/LICENSE)
+
+Role to install extensions for the
+[Visual Studio Code](https://code.visualstudio.com) IDE / text editor.
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+* Ansible >= 2.0
+
+* Linux Distribution
+
+    * Debian Family
+
+        * Ubuntu
+
+            * Xenial (16.04)
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+The following variables will change the behavior of this role (default values
+are shown below):
 
-Dependencies
-------------
+```yaml
+# Users to install extensions for
+users: []
+```
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+Users are configured as follows:
+
+```yaml
+users:
+  - username: # Unix user name
+    visual_studio_code_extensions:
+      - # extension 1
+      - # extension 2
+```
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+```yaml
+- hosts: servers
+  roles:
+    - role: gantsign.visual-studio-code-extensions
+      users:
+        - username: vagrant
+          visual_studio_code_extensions:
+            - streetsidesoftware.code-spell-checker
+            - wholroyd.jinja
+            - donjayamanne.python
+```
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+More Roles From GantSign
+------------------------
+
+You can find more roles from GantSign on
+[Ansible Galaxy](https://galaxy.ansible.com/gantsign).
+
+Development & Testing
+---------------------
+
+This project uses [Molecule](http://molecule.readthedocs.io/) to aid in the
+development and testing; the role is unit tested using
+[Testinfra](http://testinfra.readthedocs.io/) and
+[pytest](http://docs.pytest.org/).
+
+To develop or test you'll need to have installed the following:
+
+* Linux (e.g. [Ubuntu](http://www.ubuntu.com/))
+* [Docker](https://www.docker.com/)
+* [Python](https://www.python.org/) (including python-pip)
+* [Ansible](https://www.ansible.com/)
+* [Molecule](http://molecule.readthedocs.io/)
+
+To run the role (i.e. the `tests/test.yml` playbook), and test the results
+(`tests/test_role.py`), execute the following command from the project root
+(i.e. the directory with `molecule.yml` in it):
+
+```bash
+molecule test
+```
 
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+John Freeman
+
+GantSign Ltd.
+Company No. 06109112 (registered in England)

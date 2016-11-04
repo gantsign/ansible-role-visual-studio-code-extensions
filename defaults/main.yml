@@ -1,2 +1,3 @@
 ---
-# defaults file for ansible-role-visual-studio-code-extensions
+# Users to install extensions for
+users: []
