@@ -1,6 +1,9 @@
 ---
 ansible:
   playbook: tests/test.yml
+
+dependency:
+  name: galaxy
   requirements_file: tests/requirements.yml
 
 docker:
