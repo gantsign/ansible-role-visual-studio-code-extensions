@@ -6,8 +6,14 @@ dependency:
   name: galaxy
   requirements_file: tests/requirements.yml
 
+driver:
+  name: docker
+
 docker:
   containers:
     - name: ansible-role-visual-studio-code-extensions-ubuntu-xenial
       image: ubuntu
       image_version: '16.04'
+
+verifier:
+  name: testinfra
