@@ -16,5 +16,5 @@ def test_visual_studio_code(Command, extension):
 
 
 def test_visual_studio_code_extensions(Command):
-    output = Command.check_output('code --list-extensions')
+    output = Command.check_output('sudo --user test_user -H code --list-extensions')
     assert 'donjayamanne.python' in output
