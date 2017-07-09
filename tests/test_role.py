@@ -13,3 +13,8 @@ def test_visual_studio_code(Command, extension):
     output = Command.check_output('sudo --user test_usr -H code %s %s',
                                   '--install-extension', extension)
     assert 'already installed' in output
+
+def test_visual_studio_code_extensions(Command):
+    output = Command.check_output('code --list-extensions')
+    assert 'donjayamanne.python' in output
+
