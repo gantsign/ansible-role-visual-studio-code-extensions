@@ -3,7 +3,7 @@ language: python
 python: '2.7'
 
 # Test the build on separate OS
-os: 
+os:
   - linux
   - osx
 
