@@ -14,6 +14,7 @@ def test_visual_studio_code(Command, extension):
                                   '--install-extension', extension)
     assert 'already installed' in output
 
+
 def test_visual_studio_code_extensions(Command):
     output = Command.check_output('code --list-extensions')
     assert 'donjayamanne.python' in output
