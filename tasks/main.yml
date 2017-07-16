@@ -1,6 +1,53 @@
 ---
-- include: MacOSX.yml
-  when: "ansible_distribution == 'MacOSX'"
+- name: install extension cli dependencies (apt)
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - gconf2
+    - libasound2
+    - libgtk2.0-0
+    - libxss1
+  when: ansible_pkg_mgr == 'apt'
 
-- include: default.yml
-  when: "ansible_distribution != 'MacOSX'"
+- name: set default user group for MacOSX
+  set_fact:
+    visual_studio_code_extensions_user_group_name: admin
+  when: "ansible_distribution == 'MacOSX' and visual_studio_code_extensions_user_group_name in (None, '', omit)"
+
+- name: create config directories for users
+  become: yes
+  file:
+    path: "~{{ item.0.username }}/.config"
+    state: directory
+    owner: "{{ item.0.username }}"
+    group: "{{ (visual_studio_code_extensions_user_group_name not in (None, '', omit)) | ternary(visual_studio_code_extensions_user_group_name, item.0.username) }}"
+    mode: 'u=rwx,go=r'
+  with_subelements:
+    - "{{ users }}"
+    - visual_studio_code_extensions
+    - skip_missing: yes
+
+- name: create Visual Studio Code directories for users
+  become: yes
+  file:
+    path: "~{{ item.0.username }}/.config/Code/User"
+    state: directory
+    owner: "{{ item.0.username }}"
+    group: "{{ (visual_studio_code_extensions_user_group_name not in (None, '', omit)) | ternary(visual_studio_code_extensions_user_group_name, item.0.username) }}"
+    mode: 'u=rwx,go='
+  with_subelements:
+    - "{{ users }}"
+    - visual_studio_code_extensions
+    - skip_missing: yes
+
+- name: install extensions
+  become: yes
+  become_user: "{{ item.0.username }}"
+  command: "code --install-extension '{{ item.1 }}'"
+  with_subelements:
+    - "{{ users }}"
+    - visual_studio_code_extensions
+    - skip_missing: yes
+  register: vscode_result
+  changed_when: "'already installed' not in vscode_result.stdout"
