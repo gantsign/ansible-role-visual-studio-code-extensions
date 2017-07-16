@@ -10,6 +10,6 @@ users: []
 # List of extensions to be uninstalled for a particular user
 # Defaults to empty list
 # value can be specified as shown below
-# visual_studio_code_extensions_absent: 
+# visual_studio_code_extensions_absent:
 #   - ms-vscode.csharp
 visual_studio_code_extensions_absent: []
