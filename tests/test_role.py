@@ -20,6 +20,7 @@ def test_visual_studio_code_extensions(Command):
                                   '--list-extensions')
     assert 'donjayamanne.python' in output
 
+
 @pytest.mark.parametrize('extension', [
     'donjayamanne.python',
     'wholroyd.jinja'
