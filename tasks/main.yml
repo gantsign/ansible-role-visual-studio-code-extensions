@@ -45,3 +45,14 @@
     - skip_missing: yes
   register: vscode_result
   changed_when: "'already installed' not in vscode_result.stdout"
+
+- name: uninstall extensions
+  become: yes
+  become_user: "{{ item.0.username }}"
+  command: "code --uninstall-extension '{{ item.1 }}'"
+  with_subelements:
+    - "{{ users }}"
+    - visual_studio_code_extensions_absent
+    - skip_missing: yes
+  register: vscode_uninstall_result
+  changed_when: "'successfully uninstalled' in vscode_uninstall_result.stdout"
