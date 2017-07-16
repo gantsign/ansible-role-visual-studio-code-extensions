@@ -13,13 +13,28 @@ Requirements
 
 * Ansible >= 2.0
 
-* Linux Distribution
+* OS
 
-    * Debian Family
+    * Linux
 
-        * Ubuntu
+      * Debian Family
 
-            * Xenial (16.04)
+          * Ubuntu
+
+              * Xenial (16.04)
+
+      * SUSE Family
+
+          * OpenSUSE
+
+              * 42.2
+
+      * Note: other versions are likely to work but have not been tested.
+
+    * MacOSX
+
+        * Consider MacOSX support experimental as this time as it's not included
+          in the automated tests.
 
 Role Variables
 --------------
@@ -28,8 +43,20 @@ The following variables will change the behavior of this role (default values
 are shown below):
 
 ```yaml
+# The name of the group for user files and folders (leave as null to use default
+# value). Defaults to `users` on SUSE, `admin` on MacOSX and the username on all
+# other OSs / distributions.
+visual_studio_code_extensions_user_group_name: null
+
 # Users to install extensions for
 users: []
+
+# List of extensions to be uninstalled for a particular user
+# Defaults to empty list
+# value can be specified as shown below
+# visual_studio_code_extensions_absent: 
+#   - ms-vscode.csharp
+visual_studio_code_extensions_absent: []
 ```
 
 Users are configured as follows:
@@ -55,6 +82,8 @@ Example Playbook
             - streetsidesoftware.code-spell-checker
             - wholroyd.jinja
             - donjayamanne.python
+          visual_studio_code_extensions_absent:
+            - streetsidesoftware.code-spell-checker
 ```
 
 More Roles From GantSign
