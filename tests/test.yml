@@ -15,8 +15,33 @@
         - test_usr2
         - test_usr3
 
+    - name: install dependencies (SUSE)
+      command: zypper --non-interactive install python-xml
+      changed_when: no
+      when: "ansible_os_family == 'Suse'"
+
+    - name: import VS Code RPM key (SUSE)
+      rpm_key:
+        state: present
+        key: 'https://packages.microsoft.com/keys/microsoft.asc'
+      when: "ansible_os_family == 'Suse'"
+
+    - name: install VS Code repo (SUSE)
+      zypper_repository:
+        name: Visual Studio Code
+        repo: 'https://packages.microsoft.com/yumrepos/vscode'
+        state: present
+      when: "ansible_os_family == 'Suse'"
+
+    - name: install VS Code (SUSE)
+      zypper:
+        name: code
+        state: present
+      when: "ansible_os_family == 'Suse'"
+
   roles:
     - role: gantsign.visual-studio-code
+      when: ansible_pkg_mgr == 'apt'
 
     - role: ansible-role-visual-studio-code-extensions
       users:

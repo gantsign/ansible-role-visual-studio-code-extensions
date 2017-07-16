@@ -8,9 +8,15 @@ galaxy_info:
   - name: Ubuntu
     versions:
     - xenial
+<<<<<<< HEAD
   - name: MacOS
     versions:
     - Sierra 10.12.5
+=======
+  - name: MacOSX
+    versions:
+    - 10.12
+>>>>>>> upstream/master
   galaxy_tags:
     - code
 dependencies: []
