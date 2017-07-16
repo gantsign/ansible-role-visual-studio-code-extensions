@@ -14,5 +14,10 @@ docker:
     - name: ansible-role-visual-studio-code-extensions-ubuntu-xenial
       image: ubuntu
       image_version: '16.04'
+    - name: ansible-role-visual-studio-code-extensions-opensuse-leap
+      image: opensuse
+      image_version: '42.2'
+      command: /bin/bash
+
 verifier:
   name: testinfra
