@@ -2,6 +2,11 @@
 language: python
 python: '2.7'
 
+# Test the build on separate OS
+# os:
+#   - linux
+#   - osx
+
 # Spin off separate builds for each of the following versions of Ansible
 env:
   - ANSIBLE_VERSION=2.0.2

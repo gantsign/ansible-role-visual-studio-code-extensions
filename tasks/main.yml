@@ -10,13 +10,18 @@
     - libxss1
   when: ansible_pkg_mgr == 'apt'
 
+- name: set default user group for MacOSX
+  set_fact:
+    visual_studio_code_extensions_user_group_name: admin
+  when: "ansible_distribution == 'MacOSX' and visual_studio_code_extensions_user_group_name in (None, '', omit)"
+
 - name: create config directories for users
   become: yes
   file:
     path: "~{{ item.0.username }}/.config"
     state: directory
     owner: "{{ item.0.username }}"
-    group: "{{ item.0.username }}"
+    group: "{{ (visual_studio_code_extensions_user_group_name not in (None, '', omit)) | ternary(visual_studio_code_extensions_user_group_name, item.0.username) }}"
     mode: 'u=rwx,go=r'
   with_subelements:
     - "{{ users }}"
@@ -29,7 +34,7 @@
     path: "~{{ item.0.username }}/.config/Code/User"
     state: directory
     owner: "{{ item.0.username }}"
-    group: "{{ item.0.username }}"
+    group: "{{ (visual_studio_code_extensions_user_group_name not in (None, '', omit)) | ternary(visual_studio_code_extensions_user_group_name, item.0.username) }}"
     mode: 'u=rwx,go='
   with_subelements:
     - "{{ users }}"
