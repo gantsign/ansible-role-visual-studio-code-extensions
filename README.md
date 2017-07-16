@@ -23,6 +23,14 @@ Requirements
 
               * Xenial (16.04)
 
+      * SUSE Family
+
+          * OpenSUSE
+
+              * 42.2
+
+      * Note: other versions are likely to work but have not been tested.
+
     * MacOSX
 
         * Consider MacOSX support experimental as this time as it's not included
@@ -36,8 +44,8 @@ are shown below):
 
 ```yaml
 # The name of the group for user files and folders (leave as null to use default
-# value). Defaults to `admin` on MacOSX and the username on all other OSs
-# distributions.
+# value). Defaults to `users` on SUSE, `admin` on MacOSX and the username on all
+# other OSs / distributions.
 visual_studio_code_extensions_user_group_name: null
 
 # Users to install extensions for

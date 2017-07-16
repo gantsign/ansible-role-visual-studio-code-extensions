@@ -10,6 +10,11 @@
     - libxss1
   when: ansible_pkg_mgr == 'apt'
 
+- name: set default user group for SUSE
+  set_fact:
+    visual_studio_code_extensions_user_group_name: users
+  when: "ansible_os_family == 'Suse' and visual_studio_code_extensions_user_group_name in (None, '', omit)"
+
 - name: set default user group for MacOSX
   set_fact:
     visual_studio_code_extensions_user_group_name: admin
