@@ -49,6 +49,7 @@
 - name: uninstall extensions
   become: yes
   become_user: "{{ item.0.username }}"
+  when: "ansible_distribution == 'MacOSX'"
   command: "code --uninstall-extension '{{ item.1 }}'"
   with_subelements:
     - "{{ users }}"
