@@ -8,6 +8,9 @@ galaxy_info:
   - name: Ubuntu
     versions:
     - xenial
+  - name: MacOS
+    versions:
+    - Sierra 10.12.5
   galaxy_tags:
     - code
 dependencies: []
