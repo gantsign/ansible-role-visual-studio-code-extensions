@@ -3,16 +3,16 @@ cwd=/Users/nileshgule/ansible-role-visual-studio-code-extensions
 args=['tests/test_role.py', '--debug', '--connection=docker']
 
   pytest_cmdline_main [hook]
-      config: <_pytest.config.Config object at 0x10cbc4310>
+      config: <_pytest.config.Config object at 0x1064c4310>
     pytest_plugin_registered [hook]
-        manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
+        manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
         plugin: <Session 'ansible-role-visual-studio-code-extensions'>
     finish pytest_plugin_registered --> [] [hook]
     pytest_configure [hook]
-        config: <_pytest.config.Config object at 0x10cbc4310>
+        config: <_pytest.config.Config object at 0x1064c4310>
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          plugin: <_pytest.cacheprovider.LFPlugin instance at 0x10d029cf8>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          plugin: <_pytest.cacheprovider.LFPlugin instance at 0x106929cf8>
       finish pytest_plugin_registered --> [] [hook]
     find_module called for: py._io.terminalwriter [assertion]
     find_module called for: py._io.termios [assertion]
@@ -27,334 +27,334 @@ args=['tests/test_role.py', '--debug', '--connection=docker']
           fslocation: None
       finish pytest_logwarning --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>}>
-          plugin: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.config.PytestPluginManager object at 0x10649eed0>}>
+          plugin: <_pytest.config.PytestPluginManager object at 0x10649eed0>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.config.Config object at 0x10cbc4310>}>
-          plugin: <_pytest.config.Config object at 0x10cbc4310>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.config.Config object at 0x1064c4310>}>
+          plugin: <_pytest.config.Config object at 0x1064c4310>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.mark' from '/Library/Python/2.7/site-packages/_pytest/mark.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.mark' from '/Library/Python/2.7/site-packages/_pytest/mark.pyc'>}>
           plugin: <module '_pytest.mark' from '/Library/Python/2.7/site-packages/_pytest/mark.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.main' from '/Library/Python/2.7/site-packages/_pytest/main.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.main' from '/Library/Python/2.7/site-packages/_pytest/main.pyc'>}>
           plugin: <module '_pytest.main' from '/Library/Python/2.7/site-packages/_pytest/main.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.terminal' from '/Library/Python/2.7/site-packages/_pytest/terminal.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.terminal' from '/Library/Python/2.7/site-packages/_pytest/terminal.pyc'>}>
           plugin: <module '_pytest.terminal' from '/Library/Python/2.7/site-packages/_pytest/terminal.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.runner' from '/Library/Python/2.7/site-packages/_pytest/runner.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.runner' from '/Library/Python/2.7/site-packages/_pytest/runner.pyc'>}>
           plugin: <module '_pytest.runner' from '/Library/Python/2.7/site-packages/_pytest/runner.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.python' from '/Library/Python/2.7/site-packages/_pytest/python.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.python' from '/Library/Python/2.7/site-packages/_pytest/python.pyc'>}>
           plugin: <module '_pytest.python' from '/Library/Python/2.7/site-packages/_pytest/python.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.fixtures' from '/Library/Python/2.7/site-packages/_pytest/fixtures.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.fixtures' from '/Library/Python/2.7/site-packages/_pytest/fixtures.pyc'>}>
           plugin: <module '_pytest.fixtures' from '/Library/Python/2.7/site-packages/_pytest/fixtures.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.debugging' from '/Library/Python/2.7/site-packages/_pytest/debugging.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.debugging' from '/Library/Python/2.7/site-packages/_pytest/debugging.pyc'>}>
           plugin: <module '_pytest.debugging' from '/Library/Python/2.7/site-packages/_pytest/debugging.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.unittest' from '/Library/Python/2.7/site-packages/_pytest/unittest.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.unittest' from '/Library/Python/2.7/site-packages/_pytest/unittest.pyc'>}>
           plugin: <module '_pytest.unittest' from '/Library/Python/2.7/site-packages/_pytest/unittest.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.capture' from '/Library/Python/2.7/site-packages/_pytest/capture.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.capture' from '/Library/Python/2.7/site-packages/_pytest/capture.pyc'>}>
           plugin: <module '_pytest.capture' from '/Library/Python/2.7/site-packages/_pytest/capture.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.skipping' from '/Library/Python/2.7/site-packages/_pytest/skipping.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.skipping' from '/Library/Python/2.7/site-packages/_pytest/skipping.pyc'>}>
           plugin: <module '_pytest.skipping' from '/Library/Python/2.7/site-packages/_pytest/skipping.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.tmpdir' from '/Library/Python/2.7/site-packages/_pytest/tmpdir.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.tmpdir' from '/Library/Python/2.7/site-packages/_pytest/tmpdir.pyc'>}>
           plugin: <module '_pytest.tmpdir' from '/Library/Python/2.7/site-packages/_pytest/tmpdir.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.monkeypatch' from '/Library/Python/2.7/site-packages/_pytest/monkeypatch.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.monkeypatch' from '/Library/Python/2.7/site-packages/_pytest/monkeypatch.pyc'>}>
           plugin: <module '_pytest.monkeypatch' from '/Library/Python/2.7/site-packages/_pytest/monkeypatch.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.recwarn' from '/Library/Python/2.7/site-packages/_pytest/recwarn.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.recwarn' from '/Library/Python/2.7/site-packages/_pytest/recwarn.pyc'>}>
           plugin: <module '_pytest.recwarn' from '/Library/Python/2.7/site-packages/_pytest/recwarn.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.pastebin' from '/Library/Python/2.7/site-packages/_pytest/pastebin.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.pastebin' from '/Library/Python/2.7/site-packages/_pytest/pastebin.pyc'>}>
           plugin: <module '_pytest.pastebin' from '/Library/Python/2.7/site-packages/_pytest/pastebin.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.helpconfig' from '/Library/Python/2.7/site-packages/_pytest/helpconfig.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.helpconfig' from '/Library/Python/2.7/site-packages/_pytest/helpconfig.pyc'>}>
           plugin: <module '_pytest.helpconfig' from '/Library/Python/2.7/site-packages/_pytest/helpconfig.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.nose' from '/Library/Python/2.7/site-packages/_pytest/nose.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.nose' from '/Library/Python/2.7/site-packages/_pytest/nose.pyc'>}>
           plugin: <module '_pytest.nose' from '/Library/Python/2.7/site-packages/_pytest/nose.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.assertion' from '/Library/Python/2.7/site-packages/_pytest/assertion/__init__.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.assertion' from '/Library/Python/2.7/site-packages/_pytest/assertion/__init__.pyc'>}>
           plugin: <module '_pytest.assertion' from '/Library/Python/2.7/site-packages/_pytest/assertion/__init__.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.junitxml' from '/Library/Python/2.7/site-packages/_pytest/junitxml.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.junitxml' from '/Library/Python/2.7/site-packages/_pytest/junitxml.pyc'>}>
           plugin: <module '_pytest.junitxml' from '/Library/Python/2.7/site-packages/_pytest/junitxml.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.resultlog' from '/Library/Python/2.7/site-packages/_pytest/resultlog.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.resultlog' from '/Library/Python/2.7/site-packages/_pytest/resultlog.pyc'>}>
           plugin: <module '_pytest.resultlog' from '/Library/Python/2.7/site-packages/_pytest/resultlog.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.doctest' from '/Library/Python/2.7/site-packages/_pytest/doctest.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.doctest' from '/Library/Python/2.7/site-packages/_pytest/doctest.pyc'>}>
           plugin: <module '_pytest.doctest' from '/Library/Python/2.7/site-packages/_pytest/doctest.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.cacheprovider' from '/Library/Python/2.7/site-packages/_pytest/cacheprovider.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.cacheprovider' from '/Library/Python/2.7/site-packages/_pytest/cacheprovider.pyc'>}>
           plugin: <module '_pytest.cacheprovider' from '/Library/Python/2.7/site-packages/_pytest/cacheprovider.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.freeze_support' from '/Library/Python/2.7/site-packages/_pytest/freeze_support.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.freeze_support' from '/Library/Python/2.7/site-packages/_pytest/freeze_support.pyc'>}>
           plugin: <module '_pytest.freeze_support' from '/Library/Python/2.7/site-packages/_pytest/freeze_support.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.setuponly' from '/Library/Python/2.7/site-packages/_pytest/setuponly.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.setuponly' from '/Library/Python/2.7/site-packages/_pytest/setuponly.pyc'>}>
           plugin: <module '_pytest.setuponly' from '/Library/Python/2.7/site-packages/_pytest/setuponly.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.setupplan' from '/Library/Python/2.7/site-packages/_pytest/setupplan.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.setupplan' from '/Library/Python/2.7/site-packages/_pytest/setupplan.pyc'>}>
           plugin: <module '_pytest.setupplan' from '/Library/Python/2.7/site-packages/_pytest/setupplan.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.warnings' from '/Library/Python/2.7/site-packages/_pytest/warnings.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.warnings' from '/Library/Python/2.7/site-packages/_pytest/warnings.pyc'>}>
           plugin: <module '_pytest.warnings' from '/Library/Python/2.7/site-packages/_pytest/warnings.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module 'testinfra.plugin' from '/Library/Python/2.7/site-packages/testinfra/plugin.py'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module 'testinfra.plugin' from '/Library/Python/2.7/site-packages/testinfra/plugin.py'>}>
           plugin: <module 'testinfra.plugin' from '/Library/Python/2.7/site-packages/testinfra/plugin.py'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.capture.CaptureManager instance at 0x10d01c248>}>
-          plugin: <_pytest.capture.CaptureManager instance at 0x10d01c248>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.capture.CaptureManager instance at 0x10691c248>}>
+          plugin: <_pytest.capture.CaptureManager instance at 0x10691c248>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <Session 'ansible-role-visual-studio-code-extensions'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <Session 'ansible-role-visual-studio-code-extensions'>}>
           plugin: <Session 'ansible-role-visual-studio-code-extensions'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.cacheprovider.LFPlugin instance at 0x10d029cf8>}>
-          plugin: <_pytest.cacheprovider.LFPlugin instance at 0x10d029cf8>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.cacheprovider.LFPlugin instance at 0x106929cf8>}>
+          plugin: <_pytest.cacheprovider.LFPlugin instance at 0x106929cf8>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          plugin: <_pytest.terminal.TerminalReporter instance at 0x10d031050>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          plugin: <_pytest.terminal.TerminalReporter instance at 0x106931050>
       finish pytest_plugin_registered --> [] [hook]
     finish pytest_configure --> [] [hook]
     pytest_sessionstart [hook]
         session: <Session 'ansible-role-visual-studio-code-extensions'>
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>}>
-          plugin: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.config.PytestPluginManager object at 0x10649eed0>}>
+          plugin: <_pytest.config.PytestPluginManager object at 0x10649eed0>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.config.Config object at 0x10cbc4310>}>
-          plugin: <_pytest.config.Config object at 0x10cbc4310>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.config.Config object at 0x1064c4310>}>
+          plugin: <_pytest.config.Config object at 0x1064c4310>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.mark' from '/Library/Python/2.7/site-packages/_pytest/mark.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.mark' from '/Library/Python/2.7/site-packages/_pytest/mark.pyc'>}>
           plugin: <module '_pytest.mark' from '/Library/Python/2.7/site-packages/_pytest/mark.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.main' from '/Library/Python/2.7/site-packages/_pytest/main.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.main' from '/Library/Python/2.7/site-packages/_pytest/main.pyc'>}>
           plugin: <module '_pytest.main' from '/Library/Python/2.7/site-packages/_pytest/main.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.terminal' from '/Library/Python/2.7/site-packages/_pytest/terminal.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.terminal' from '/Library/Python/2.7/site-packages/_pytest/terminal.pyc'>}>
           plugin: <module '_pytest.terminal' from '/Library/Python/2.7/site-packages/_pytest/terminal.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.runner' from '/Library/Python/2.7/site-packages/_pytest/runner.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.runner' from '/Library/Python/2.7/site-packages/_pytest/runner.pyc'>}>
           plugin: <module '_pytest.runner' from '/Library/Python/2.7/site-packages/_pytest/runner.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.python' from '/Library/Python/2.7/site-packages/_pytest/python.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.python' from '/Library/Python/2.7/site-packages/_pytest/python.pyc'>}>
           plugin: <module '_pytest.python' from '/Library/Python/2.7/site-packages/_pytest/python.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.fixtures' from '/Library/Python/2.7/site-packages/_pytest/fixtures.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.fixtures' from '/Library/Python/2.7/site-packages/_pytest/fixtures.pyc'>}>
           plugin: <module '_pytest.fixtures' from '/Library/Python/2.7/site-packages/_pytest/fixtures.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.debugging' from '/Library/Python/2.7/site-packages/_pytest/debugging.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.debugging' from '/Library/Python/2.7/site-packages/_pytest/debugging.pyc'>}>
           plugin: <module '_pytest.debugging' from '/Library/Python/2.7/site-packages/_pytest/debugging.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.unittest' from '/Library/Python/2.7/site-packages/_pytest/unittest.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.unittest' from '/Library/Python/2.7/site-packages/_pytest/unittest.pyc'>}>
           plugin: <module '_pytest.unittest' from '/Library/Python/2.7/site-packages/_pytest/unittest.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.capture' from '/Library/Python/2.7/site-packages/_pytest/capture.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.capture' from '/Library/Python/2.7/site-packages/_pytest/capture.pyc'>}>
           plugin: <module '_pytest.capture' from '/Library/Python/2.7/site-packages/_pytest/capture.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.skipping' from '/Library/Python/2.7/site-packages/_pytest/skipping.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.skipping' from '/Library/Python/2.7/site-packages/_pytest/skipping.pyc'>}>
           plugin: <module '_pytest.skipping' from '/Library/Python/2.7/site-packages/_pytest/skipping.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.tmpdir' from '/Library/Python/2.7/site-packages/_pytest/tmpdir.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.tmpdir' from '/Library/Python/2.7/site-packages/_pytest/tmpdir.pyc'>}>
           plugin: <module '_pytest.tmpdir' from '/Library/Python/2.7/site-packages/_pytest/tmpdir.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.monkeypatch' from '/Library/Python/2.7/site-packages/_pytest/monkeypatch.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.monkeypatch' from '/Library/Python/2.7/site-packages/_pytest/monkeypatch.pyc'>}>
           plugin: <module '_pytest.monkeypatch' from '/Library/Python/2.7/site-packages/_pytest/monkeypatch.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.recwarn' from '/Library/Python/2.7/site-packages/_pytest/recwarn.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.recwarn' from '/Library/Python/2.7/site-packages/_pytest/recwarn.pyc'>}>
           plugin: <module '_pytest.recwarn' from '/Library/Python/2.7/site-packages/_pytest/recwarn.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.pastebin' from '/Library/Python/2.7/site-packages/_pytest/pastebin.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.pastebin' from '/Library/Python/2.7/site-packages/_pytest/pastebin.pyc'>}>
           plugin: <module '_pytest.pastebin' from '/Library/Python/2.7/site-packages/_pytest/pastebin.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.helpconfig' from '/Library/Python/2.7/site-packages/_pytest/helpconfig.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.helpconfig' from '/Library/Python/2.7/site-packages/_pytest/helpconfig.pyc'>}>
           plugin: <module '_pytest.helpconfig' from '/Library/Python/2.7/site-packages/_pytest/helpconfig.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.nose' from '/Library/Python/2.7/site-packages/_pytest/nose.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.nose' from '/Library/Python/2.7/site-packages/_pytest/nose.pyc'>}>
           plugin: <module '_pytest.nose' from '/Library/Python/2.7/site-packages/_pytest/nose.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.assertion' from '/Library/Python/2.7/site-packages/_pytest/assertion/__init__.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.assertion' from '/Library/Python/2.7/site-packages/_pytest/assertion/__init__.pyc'>}>
           plugin: <module '_pytest.assertion' from '/Library/Python/2.7/site-packages/_pytest/assertion/__init__.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.junitxml' from '/Library/Python/2.7/site-packages/_pytest/junitxml.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.junitxml' from '/Library/Python/2.7/site-packages/_pytest/junitxml.pyc'>}>
           plugin: <module '_pytest.junitxml' from '/Library/Python/2.7/site-packages/_pytest/junitxml.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.resultlog' from '/Library/Python/2.7/site-packages/_pytest/resultlog.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.resultlog' from '/Library/Python/2.7/site-packages/_pytest/resultlog.pyc'>}>
           plugin: <module '_pytest.resultlog' from '/Library/Python/2.7/site-packages/_pytest/resultlog.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.doctest' from '/Library/Python/2.7/site-packages/_pytest/doctest.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.doctest' from '/Library/Python/2.7/site-packages/_pytest/doctest.pyc'>}>
           plugin: <module '_pytest.doctest' from '/Library/Python/2.7/site-packages/_pytest/doctest.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.cacheprovider' from '/Library/Python/2.7/site-packages/_pytest/cacheprovider.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.cacheprovider' from '/Library/Python/2.7/site-packages/_pytest/cacheprovider.pyc'>}>
           plugin: <module '_pytest.cacheprovider' from '/Library/Python/2.7/site-packages/_pytest/cacheprovider.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.freeze_support' from '/Library/Python/2.7/site-packages/_pytest/freeze_support.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.freeze_support' from '/Library/Python/2.7/site-packages/_pytest/freeze_support.pyc'>}>
           plugin: <module '_pytest.freeze_support' from '/Library/Python/2.7/site-packages/_pytest/freeze_support.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.setuponly' from '/Library/Python/2.7/site-packages/_pytest/setuponly.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.setuponly' from '/Library/Python/2.7/site-packages/_pytest/setuponly.pyc'>}>
           plugin: <module '_pytest.setuponly' from '/Library/Python/2.7/site-packages/_pytest/setuponly.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.setupplan' from '/Library/Python/2.7/site-packages/_pytest/setupplan.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.setupplan' from '/Library/Python/2.7/site-packages/_pytest/setupplan.pyc'>}>
           plugin: <module '_pytest.setupplan' from '/Library/Python/2.7/site-packages/_pytest/setupplan.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.warnings' from '/Library/Python/2.7/site-packages/_pytest/warnings.pyc'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module '_pytest.warnings' from '/Library/Python/2.7/site-packages/_pytest/warnings.pyc'>}>
           plugin: <module '_pytest.warnings' from '/Library/Python/2.7/site-packages/_pytest/warnings.pyc'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module 'testinfra.plugin' from '/Library/Python/2.7/site-packages/testinfra/plugin.py'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <module 'testinfra.plugin' from '/Library/Python/2.7/site-packages/testinfra/plugin.py'>}>
           plugin: <module 'testinfra.plugin' from '/Library/Python/2.7/site-packages/testinfra/plugin.py'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.capture.CaptureManager instance at 0x10d01c248>}>
-          plugin: <_pytest.capture.CaptureManager instance at 0x10d01c248>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.capture.CaptureManager instance at 0x10691c248>}>
+          plugin: <_pytest.capture.CaptureManager instance at 0x10691c248>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <Session 'ansible-role-visual-studio-code-extensions'>}>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <Session 'ansible-role-visual-studio-code-extensions'>}>
           plugin: <Session 'ansible-role-visual-studio-code-extensions'>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.cacheprovider.LFPlugin instance at 0x10d029cf8>}>
-          plugin: <_pytest.cacheprovider.LFPlugin instance at 0x10d029cf8>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.cacheprovider.LFPlugin instance at 0x106929cf8>}>
+          plugin: <_pytest.cacheprovider.LFPlugin instance at 0x106929cf8>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10cb9eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.terminal.TerminalReporter instance at 0x10d031050>}>
-          plugin: <_pytest.terminal.TerminalReporter instance at 0x10d031050>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          __multicall__: <_MultiCall 0 results, 0 meths, kwargs={'manager': <_pytest.config.PytestPluginManager object at 0x10649eed0>, '__multicall__': <_MultiCall 0 results, 0 meths, kwargs={...}>, 'plugin': <_pytest.terminal.TerminalReporter instance at 0x106931050>}>
+          plugin: <_pytest.terminal.TerminalReporter instance at 0x106931050>
       finish pytest_plugin_registered --> [] [hook]
       pytest_plugin_registered [hook]
-          manager: <_pytest.config.PytestPluginManager object at 0x10cb9eed0>
-          plugin: <_pytest.fixtures.FixtureManager instance at 0x10d031998>
+          manager: <_pytest.config.PytestPluginManager object at 0x10649eed0>
+          plugin: <_pytest.fixtures.FixtureManager instance at 0x106931998>
       finish pytest_plugin_registered --> [] [hook]
       pytest_report_header [hook]
           startdir: /Users/nileshgule/ansible-role-visual-studio-code-extensions
-          config: <_pytest.config.Config object at 0x10cbc4310>
+          config: <_pytest.config.Config object at 0x1064c4310>
       finish pytest_report_header --> [['rootdir: /Users/nileshgule/ansible-role-visual-studio-code-extensions, inifile:', 'plugins: testinfra-1.6.4'], ['using: pytest-3.1.3 pylib-1.4.34', 'setuptools registered plugins:', '  testinfra-1.6.4 at /Library/Python/2.7/site-packages/testinfra/plugin.py']] [hook]
     finish pytest_sessionstart --> [] [hook]
     pytest_collection [hook]
@@ -700,16 +700,11 @@ All Rights Reserved., 'NameError': <type 'exceptions.NameError'>, 'BytesWarning'
             name: __builtins__
         finish pytest_pycollect_makeitem --> None [hook]
         pytest_pycollect_makeitem [hook]
-            obj: /Users/nileshgule/ansible-role-visual-studio-code-extensions/tests/test_role.py
+            obj: <function test_visual_studio_code_uninstall_extensions at 0x10601d1b8>
             collector: <Module 'tests/test_role.py'>
-            name: __file__
-        finish pytest_pycollect_makeitem --> None [hook]
-        pytest_pycollect_makeitem [hook]
-            obj: <function test_visual_studio_code_extensions at 0x10d55cb18>
-            collector: <Module 'tests/test_role.py'>
-            name: test_visual_studio_code_extensions
+            name: test_visual_studio_code_uninstall_extensions
           pytest_generate_tests [hook]
-              metafunc: <_pytest.python.Metafunc object at 0x10d54ed50>
+              metafunc: <_pytest.python.Metafunc object at 0x106e4ed10>
           find_module called for: testinfra.backend.docker [assertion]
           matched marked file 'testinfra.backend.docker' (from 'testinfra') [assertion]
           read only directory: '/Library/Python/2.7/site-packages/testinfra/backend' [assertion]
@@ -752,31 +747,28 @@ All Rights Reserved., 'NameError': <type 'exceptions.NameError'>, 'BytesWarning'
           rewriting '/Library/Python/2.7/site-packages/testinfra/backend/testinfra.py' [assertion]
           find_module called for: py._io.saferepr [assertion]
           find_module called for: encodings.unicode_escape [assertion]
-          finish pytest_generate_tests --> [] [hook]
-        finish pytest_pycollect_makeitem --> [<Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>, <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>] [hook]
-        pytest_pycollect_makeitem [hook]
-            obj: <_pytest.assertion.rewrite.AssertionRewritingHook object at 0x10c762350>
-            collector: <Module 'tests/test_role.py'>
-            name: __loader__
-        finish pytest_pycollect_makeitem --> None [hook]
-        pytest_pycollect_makeitem [hook]
-            obj: <function test_visual_studio_code at 0x10c71d1b8>
-            collector: <Module 'tests/test_role.py'>
-            name: test_visual_studio_code
-          pytest_generate_tests [hook]
-              metafunc: <_pytest.python.Metafunc object at 0x10d5b60d0>
             pytest_make_parametrize_id [hook]
                 argname: extension
-                config: <_pytest.config.Config object at 0x10cbc4310>
+                config: <_pytest.config.Config object at 0x1064c4310>
                 val: donjayamanne.python
             finish pytest_make_parametrize_id --> None [hook]
             pytest_make_parametrize_id [hook]
                 argname: extension
-                config: <_pytest.config.Config object at 0x10cbc4310>
+                config: <_pytest.config.Config object at 0x1064c4310>
                 val: wholroyd.jinja
             finish pytest_make_parametrize_id --> None [hook]
           finish pytest_generate_tests --> [] [hook]
-        finish pytest_pycollect_makeitem --> [<Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>, <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>, <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>, <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>] [hook]
+        finish pytest_pycollect_makeitem --> [<Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>, <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>, <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>, <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>] [hook]
+        pytest_pycollect_makeitem [hook]
+            obj: /Users/nileshgule/ansible-role-visual-studio-code-extensions/tests/test_role.py
+            collector: <Module 'tests/test_role.py'>
+            name: __file__
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            obj: <_pytest.assertion.rewrite.AssertionRewritingHook object at 0x106062350>
+            collector: <Module 'tests/test_role.py'>
+            name: __loader__
+        finish pytest_pycollect_makeitem --> None [hook]
         pytest_pycollect_makeitem [hook]
             obj: <module 'pytest' from '/Library/Python/2.7/site-packages/pytest.pyc'>
             collector: <Module 'tests/test_role.py'>
@@ -823,7 +815,7 @@ All Rights Reserved., 'NameError': <type 'exceptions.NameError'>, 'BytesWarning'
             name: __setattr__
         finish pytest_pycollect_makeitem --> None [hook]
         pytest_pycollect_makeitem [hook]
-            obj: <built-in method __new__ of type object at 0x10c59e3d0>
+            obj: <built-in method __new__ of type object at 0x105e9d3d0>
             collector: <Module 'tests/test_role.py'>
             name: __new__
         finish pytest_pycollect_makeitem --> None [hook]
@@ -892,38 +884,30 @@ All Rights Reserved., 'NameError': <type 'exceptions.NameError'>, 'BytesWarning'
             collector: <Module 'tests/test_role.py'>
             name: __sizeof__
         finish pytest_pycollect_makeitem --> None [hook]
-      finish pytest_make_collect_report --> <CollectReport 'tests/test_role.py' lenresult=6 outcome='passed'> [hook]
-    genitems <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'> [collection]
+      finish pytest_make_collect_report --> <CollectReport 'tests/test_role.py' lenresult=4 outcome='passed'> [hook]
+    genitems <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'> [collection]
       pytest_itemcollected [hook]
-          item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
+          item: <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
       finish pytest_itemcollected --> [] [hook]
-    genitems <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'> [collection]
+    genitems <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'> [collection]
       pytest_itemcollected [hook]
-          item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
+          item: <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
       finish pytest_itemcollected --> [] [hook]
-    genitems <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'> [collection]
+    genitems <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'> [collection]
       pytest_itemcollected [hook]
-          item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
+          item: <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
       finish pytest_itemcollected --> [] [hook]
-    genitems <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'> [collection]
+    genitems <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'> [collection]
       pytest_itemcollected [hook]
-          item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-      finish pytest_itemcollected --> [] [hook]
-    genitems <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'> [collection]
-      pytest_itemcollected [hook]
-          item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-      finish pytest_itemcollected --> [] [hook]
-    genitems <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'> [collection]
-      pytest_itemcollected [hook]
-          item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
+          item: <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
       finish pytest_itemcollected --> [] [hook]
       pytest_collectreport [hook]
-          report: <CollectReport 'tests/test_role.py' lenresult=6 outcome='passed'>
+          report: <CollectReport 'tests/test_role.py' lenresult=4 outcome='passed'>
       finish pytest_collectreport --> [] [hook]
       pytest_collection_modifyitems [hook]
-          items: [<Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>, <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>, <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>, <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>, <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>, <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>]
+          items: [<Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>, <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>, <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>, <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>]
           session: <Session 'ansible-role-visual-studio-code-extensions'>
-          config: <_pytest.config.Config object at 0x10cbc4310>
+          config: <_pytest.config.Config object at 0x1064c4310>
       finish pytest_collection_modifyitems --> [] [hook]
       pytest_collection_finish [hook]
           session: <Session 'ansible-role-visual-studio-code-extensions'>
@@ -940,35 +924,35 @@ All Rights Reserved., 'NameError': <type 'exceptions.NameError'>, 'BytesWarning'
             fslocation: None
         finish pytest_logwarning --> [] [hook]
       finish pytest_collection_finish --> [] [hook]
-    finish pytest_collection --> [<Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>, <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>, <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>, <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>, <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>, <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>] [hook]
+    finish pytest_collection --> [<Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>, <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>, <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>, <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>] [hook]
     pytest_runtestloop [hook]
         session: <Session 'ansible-role-visual-studio-code-extensions'>
       pytest_runtest_protocol [hook]
-          item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
-          nextitem: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
+          item: <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
+          nextitem: <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
         pytest_runtest_logstart [hook]
-            location: ('tests/test_role.py', 7, 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]')
-            nodeid: tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]
+            location: ('tests/test_role.py', 23, 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]')
+            nodeid: tests/test_role.py::test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]
         find_module called for: py._path.pathlib [assertion]
         find_module called for: pathlib [assertion]
         finish pytest_runtest_logstart --> [] [hook]
         pytest_runtest_setup [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
+            item: <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
           pytest_fixture_setup [hook]
               fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-              request: <SubRequest u'_testinfra_host' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
-          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x10d57af90> [hook]
+              request: <SubRequest u'_testinfra_host' for <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
+          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x106e7af10> [hook]
           pytest_fixture_setup [hook]
               fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-              request: <SubRequest 'host' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
-          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x10d57af90> [hook]
+              request: <SubRequest 'host' for <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
+          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x106e7af10> [hook]
           pytest_fixture_setup [hook]
               fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-              request: <SubRequest 'TestinfraBackend' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
-          finish pytest_fixture_setup --> <testinfra.backend.docker.DockerBackend object at 0x10d57afd0> [hook]
+              request: <SubRequest 'TestinfraBackend' for <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
+          finish pytest_fixture_setup --> <testinfra.backend.docker.DockerBackend object at 0x106e7afd0> [hook]
           pytest_fixture_setup [hook]
               fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-              request: <SubRequest 'Command' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
+              request: <SubRequest 'Command' for <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
           find_module called for: testinfra.modules.command [assertion]
           matched marked file 'testinfra.modules.command' (from 'testinfra') [assertion]
           read only directory: '/Library/Python/2.7/site-packages/testinfra/modules' [assertion]
@@ -988,539 +972,10 @@ All Rights Reserved., 'NameError': <type 'exceptions.NameError'>, 'BytesWarning'
           finish pytest_fixture_setup --> <command> [hook]
           pytest_fixture_setup [hook]
               fixturedef: <FixtureDef name='extension' scope='function' baseid='' >
-              request: <SubRequest 'extension' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
+              request: <SubRequest 'extension' for <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>>
           finish pytest_fixture_setup --> donjayamanne.python [hook]
         finish pytest_runtest_setup --> [] [hook]
         pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
+            item: <Function 'test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
             call: <CallInfo when='setup' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='setup' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='setup' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='setup' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_call [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
-          pytest_pyfunc_call [hook]
-              pyfuncitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
-          finish pytest_pyfunc_call --> True [hook]
-        finish pytest_runtest_call --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
-            call: <CallInfo when='call' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='call' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='call' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='call' outcome='passed'>
-          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_teardown [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
-            nextitem: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='extension' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-        finish pytest_runtest_teardown --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]'>
-            call: <CallInfo when='teardown' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='teardown' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='teardown' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='teardown' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-      finish pytest_runtest_protocol --> True [hook]
-      pytest_runtest_protocol [hook]
-          item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-          nextitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-        pytest_runtest_logstart [hook]
-            location: ('tests/test_role.py', 17, 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]')
-            nodeid: tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]
-        finish pytest_runtest_logstart --> [] [hook]
-        pytest_runtest_setup [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-              request: <SubRequest 'TestinfraBackend' for <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>>
-          finish pytest_fixture_setup --> <testinfra.backend.docker.DockerBackend object at 0x10d57afd0> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-              request: <SubRequest 'Command' for <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>>
-          finish pytest_fixture_setup --> <command> [hook]
-        finish pytest_runtest_setup --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-            call: <CallInfo when='setup' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]' when='setup' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]' when='setup' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]' when='setup' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_call [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-          pytest_pyfunc_call [hook]
-              pyfuncitem: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-          finish pytest_pyfunc_call --> True [hook]
-        finish pytest_runtest_call --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-            call: <CallInfo when='call' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]' when='call' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]' when='call' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]' when='call' outcome='passed'>
-          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_teardown [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-            nextitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-        finish pytest_runtest_teardown --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]'>
-            call: <CallInfo when='teardown' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]' when='teardown' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]' when='teardown' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial]' when='teardown' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-      finish pytest_runtest_protocol --> True [hook]
-      pytest_runtest_protocol [hook]
-          item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-          nextitem: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-        pytest_runtest_logstart [hook]
-            location: ('tests/test_role.py', 7, 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]')
-            nodeid: tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]
-        finish pytest_runtest_logstart --> [] [hook]
-        pytest_runtest_setup [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-              request: <SubRequest u'_testinfra_host' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x10d57af90> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-              request: <SubRequest 'host' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x10d57af90> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-              request: <SubRequest 'TestinfraBackend' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> <testinfra.backend.docker.DockerBackend object at 0x10d57afd0> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-              request: <SubRequest 'Command' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> <command> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='extension' scope='function' baseid='' >
-              request: <SubRequest 'extension' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> wholroyd.jinja [hook]
-        finish pytest_runtest_setup --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-            call: <CallInfo when='setup' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]' when='setup' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]' when='setup' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]' when='setup' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_call [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-          pytest_pyfunc_call [hook]
-              pyfuncitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-          finish pytest_pyfunc_call --> True [hook]
-        finish pytest_runtest_call --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-            call: <CallInfo when='call' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]' when='call' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]' when='call' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]' when='call' outcome='passed'>
-          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_teardown [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-            nextitem: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='extension' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-        finish pytest_runtest_teardown --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]'>
-            call: <CallInfo when='teardown' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]' when='teardown' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]' when='teardown' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-wholroyd.jinja]' when='teardown' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-      finish pytest_runtest_protocol --> True [hook]
-      pytest_runtest_protocol [hook]
-          item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-          nextitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-        pytest_runtest_logstart [hook]
-            location: ('tests/test_role.py', 17, 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]')
-            nodeid: tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]
-        finish pytest_runtest_logstart --> [] [hook]
-        pytest_runtest_setup [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-              request: <SubRequest 'TestinfraBackend' for <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>>
-          finish pytest_fixture_setup --> <testinfra.backend.docker.DockerBackend object at 0x10d57afd0> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-              request: <SubRequest 'Command' for <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>>
-          finish pytest_fixture_setup --> <command> [hook]
-        finish pytest_runtest_setup --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-            call: <CallInfo when='setup' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]' when='setup' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]' when='setup' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]' when='setup' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_call [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-          pytest_pyfunc_call [hook]
-              pyfuncitem: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-          finish pytest_pyfunc_call --> True [hook]
-        finish pytest_runtest_call --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-            call: <CallInfo when='call' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]' when='call' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]' when='call' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]' when='call' outcome='passed'>
-          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_teardown [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-            nextitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-        finish pytest_runtest_teardown --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]'>
-            call: <CallInfo when='teardown' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]' when='teardown' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]' when='teardown' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code_extensions[docker://ansible-role-visual-studio-code-extensions-opensuse-leap]' when='teardown' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-      finish pytest_runtest_protocol --> True [hook]
-      pytest_runtest_protocol [hook]
-          item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-          nextitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-        pytest_runtest_logstart [hook]
-            location: ('tests/test_role.py', 7, 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]')
-            nodeid: tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]
-        finish pytest_runtest_logstart --> [] [hook]
-        pytest_runtest_setup [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-              request: <SubRequest u'_testinfra_host' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>>
-          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x10d5b6b90> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-              request: <SubRequest 'host' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>>
-          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x10d5b6b90> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-              request: <SubRequest 'TestinfraBackend' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>>
-          finish pytest_fixture_setup --> <testinfra.backend.docker.DockerBackend object at 0x10d5b6c50> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-              request: <SubRequest 'Command' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>>
-          finish pytest_fixture_setup --> <command> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='extension' scope='function' baseid='' >
-              request: <SubRequest 'extension' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>>
-          finish pytest_fixture_setup --> donjayamanne.python [hook]
-        finish pytest_runtest_setup --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-            call: <CallInfo when='setup' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]' when='setup' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]' when='setup' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]' when='setup' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_call [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-          pytest_pyfunc_call [hook]
-              pyfuncitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-          finish pytest_pyfunc_call --> True [hook]
-        finish pytest_runtest_call --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-            call: <CallInfo when='call' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]' when='call' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]' when='call' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]' when='call' outcome='passed'>
-          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_teardown [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-            nextitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='extension' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-        finish pytest_runtest_teardown --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]'>
-            call: <CallInfo when='teardown' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]' when='teardown' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]' when='teardown' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-donjayamanne.python]' when='teardown' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-      finish pytest_runtest_protocol --> True [hook]
-      pytest_runtest_protocol [hook]
-          item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-          nextitem: None
-        pytest_runtest_logstart [hook]
-            location: ('tests/test_role.py', 7, 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]')
-            nodeid: tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]
-        finish pytest_runtest_logstart --> [] [hook]
-        pytest_runtest_setup [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-              request: <SubRequest u'_testinfra_host' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x10d5b6b90> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-              request: <SubRequest 'host' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> <testinfra.host.Host object at 0x10d5b6b90> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-              request: <SubRequest 'TestinfraBackend' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> <testinfra.backend.docker.DockerBackend object at 0x10d5b6c50> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-              request: <SubRequest 'Command' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> <command> [hook]
-          pytest_fixture_setup [hook]
-              fixturedef: <FixtureDef name='extension' scope='function' baseid='' >
-              request: <SubRequest 'extension' for <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>>
-          finish pytest_fixture_setup --> wholroyd.jinja [hook]
-        finish pytest_runtest_setup --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-            call: <CallInfo when='setup' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]' when='setup' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]' when='setup' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]' when='setup' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_call [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-          pytest_pyfunc_call [hook]
-              pyfuncitem: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-          finish pytest_pyfunc_call --> True [hook]
-        finish pytest_runtest_call --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-            call: <CallInfo when='call' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]' when='call' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]' when='call' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]' when='call' outcome='passed'>
-          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-        pytest_runtest_teardown [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-            nextitem: None
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='extension' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='Command' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='TestinfraBackend' scope='function' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name='host' scope=u'module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-          pytest_fixture_post_finalizer [hook]
-              fixturedef: <FixtureDef name=u'_testinfra_host' scope='module' baseid='' >
-          finish pytest_fixture_post_finalizer --> [] [hook]
-        finish pytest_runtest_teardown --> [] [hook]
-        pytest_runtest_makereport [hook]
-            item: <Function 'test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]'>
-            call: <CallInfo when='teardown' result: []>
-        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]' when='teardown' outcome='passed'> [hook]
-        pytest_runtest_logreport [hook]
-            report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]' when='teardown' outcome='passed'>
-          pytest_report_teststatus [hook]
-              report: <TestReport 'tests/test_role.py::test_visual_studio_code[docker://ansible-role-visual-studio-code-extensions-opensuse-leap-wholroyd.jinja]' when='teardown' outcome='passed'>
-          finish pytest_report_teststatus --> ('', '', '') [hook]
-        finish pytest_runtest_logreport --> [] [hook]
-      finish pytest_runtest_protocol --> True [hook]
-    finish pytest_runtestloop --> True [hook]
-    pytest_sessionfinish [hook]
-        session: <Session 'ansible-role-visual-studio-code-extensions'>
-        exitstatus: 0
-    cache-write cache/lastfailed: {} [cache]
-      pytest_terminal_summary [hook]
-          exitstatus: 0
-          terminalreporter: <_pytest.terminal.TerminalReporter instance at 0x10d031050>
-      finish pytest_terminal_summary --> [] [hook]
-    finish pytest_sessionfinish --> [] [hook]
-    pytest_unconfigure [hook]
-        config: <_pytest.config.Config object at 0x10cbc4310>
-    finish pytest_unconfigure --> [] [hook]
-  finish [config:tmpdir]
+        finish pytest_runtest_makereport --> <TestReport 'tests/test_role.py::test_visual_studio_code_uninstall_extensions[docker://ansible-role-visual-studio-code-extensions-ubuntu-xenial-donjayamanne.python]' when='setup' 
