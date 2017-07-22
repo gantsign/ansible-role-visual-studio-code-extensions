@@ -15,6 +15,32 @@
         - test_usr2
         - test_usr3
 
+    - name: install dependencies (Debian)
+      become: yes
+      apt:
+        name: '{{ item }}'
+        state: present
+      with_items:
+        - ca-certificates
+        - apt-transport-https
+        - gconf2
+        - libasound2
+        - libgtk2.0-0
+        - libxss1
+      when: ansible_pkg_mgr == 'apt'
+
+    - name: install apt key (Debian)
+      apt_key:
+        url: 'https://packages.microsoft.com/keys/microsoft.asc'
+        state: present
+      when: ansible_pkg_mgr == 'apt'
+
+    - name: install VS Code apt repo (Debian)
+      apt_repository:
+        repo: deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
+        state: present
+      when: ansible_pkg_mgr == 'apt'
+
     - name: install dependencies (SUSE)
       command: zypper --non-interactive install python-xml
       changed_when: no
@@ -33,16 +59,24 @@
         state: present
       when: "ansible_os_family == 'Suse'"
 
-    - name: install VS Code (SUSE)
-      zypper:
+    - name: install VS Code
+      package:
         name: code
         state: present
-      when: "ansible_os_family == 'Suse'"
+      register: vscode_install
+
+    - name: install extension to be uninstalled
+      tags:
+        # Suppress warning: [ANSIBLE0016] Tasks that run when changed should likely be handlers
+        # Not applicable because this is part of the test setup not part of the role.
+        - skip_ansible_lint
+      become: yes
+      become_user: test_usr
+      command: 'code --install-extension seanmcbreen.Spell'
+      changed_when: no
+      when: vscode_install.changed
 
   roles:
-    - role: gantsign.visual-studio-code
-      when: ansible_pkg_mgr == 'apt'
-
     - role: ansible-role-visual-studio-code-extensions
       users:
         - username: test_usr
@@ -50,7 +84,9 @@
             - donjayamanne.python
             - wholroyd.jinja
           visual_studio_code_extensions_absent:
-            - donjayamanne.python
+            - seanmcbreen.Spell
+            - doesnot.Exist
         - username: test_usr2
           visual_studio_code_extensions: []
+          visual_studio_code_extensions_absent: []
         - username: test_usr3
