@@ -19,3 +19,9 @@ def test_visual_studio_code_extensions(Command):
     output = Command.check_output('sudo --user test_usr -H code %s',
                                   '--list-extensions')
     assert 'donjayamanne.python' in output
+
+
+def test_visual_studio_code_uninstall_extensions(Command):
+    output = Command.check_output('sudo --user test_usr -H code %s',
+                                  '--list-extensions')
+    assert 'seanmcbreen.Spell' not in output
