@@ -50,13 +50,6 @@ visual_studio_code_extensions_user_group_name: null
 
 # Users to install extensions for
 users: []
-
-# List of extensions to be uninstalled for a particular user
-# Defaults to empty list
-# value can be specified as shown below
-# visual_studio_code_extensions_absent: 
-#   - ms-vscode.csharp
-visual_studio_code_extensions_absent: []
 ```
 
 Users are configured as follows:
@@ -64,9 +57,13 @@ Users are configured as follows:
 ```yaml
 users:
   - username: # Unix user name
+    # Extensions to be installed if not already present
     visual_studio_code_extensions:
       - # extension 1
       - # extension 2
+    # Extensions to be uninstalled if not already absent
+    visual_studio_code_extensions_absent:
+      - # extension 3
 ```
 
 Example Playbook
@@ -83,7 +80,7 @@ Example Playbook
             - wholroyd.jinja
             - donjayamanne.python
           visual_studio_code_extensions_absent:
-            - streetsidesoftware.code-spell-checker
+            - seanmcbreen.Spell
 ```
 
 More Roles From GantSign

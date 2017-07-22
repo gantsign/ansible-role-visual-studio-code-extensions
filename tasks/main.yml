@@ -49,11 +49,11 @@
 - name: uninstall extensions
   become: yes
   become_user: "{{ item.0.username }}"
-  when: "ansible_distribution == 'MacOSX'"
   command: "code --uninstall-extension '{{ item.1 }}'"
   with_subelements:
     - "{{ users }}"
     - visual_studio_code_extensions_absent
     - skip_missing: yes
   register: vscode_uninstall_result
+  failed_when: "('is not installed' not in vscode_uninstall_result.stderr) and ('successfully uninstalled' not in vscode_uninstall_result.stdout)"
   changed_when: "'successfully uninstalled' in vscode_uninstall_result.stdout"
