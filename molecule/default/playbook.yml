@@ -59,6 +59,17 @@
         state: present
       when: "ansible_os_family == 'Suse'"
 
+    - name: install VS Code repo (yum)
+      become: yes
+      yum_repository:
+        name: code
+        description: Visual Studio Code repo
+        file: vscode
+        baseurl: https://packages.microsoft.com/yumrepos/vscode
+        gpgkey: https://packages.microsoft.com/keys/microsoft.asc
+        gpgcheck: yes
+      when: ansible_pkg_mgr == 'yum'
+
     - name: install VS Code
       package:
         name: code
