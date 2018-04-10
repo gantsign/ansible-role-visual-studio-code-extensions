@@ -23,6 +23,12 @@ Requirements
 
               * Xenial (16.04)
 
+      * RedHat Family
+
+          * CentOS
+
+              * 7
+
       * SUSE Family
 
           * OpenSUSE
