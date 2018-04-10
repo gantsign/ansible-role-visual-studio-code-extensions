@@ -78,7 +78,7 @@ Example Playbook
           visual_studio_code_extensions:
             - streetsidesoftware.code-spell-checker
             - wholroyd.jinja
-            - donjayamanne.python
+            - ms-python.python
           visual_studio_code_extensions_absent:
             - seanmcbreen.Spell
 ```
