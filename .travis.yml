@@ -19,6 +19,9 @@ matrix:
         - MOLECULE_SCENARIO=default
     - env:
         - ANSIBLE_VERSION=2.3.3
+        - MOLECULE_SCENARIO=fedora
+    - env:
+        - ANSIBLE_VERSION=2.3.3
         - MOLECULE_SCENARIO=opensuse
     - env:
         - ANSIBLE_VERSION=2.4.4
@@ -26,6 +29,9 @@ matrix:
     - env:
         - ANSIBLE_VERSION=2.4.4
         - MOLECULE_SCENARIO=default
+    - env:
+        - ANSIBLE_VERSION=2.4.4
+        - MOLECULE_SCENARIO=fedora
     - env:
         - ANSIBLE_VERSION=2.4.4
         - MOLECULE_SCENARIO=opensuse
