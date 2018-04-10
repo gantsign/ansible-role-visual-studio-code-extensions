@@ -5,12 +5,12 @@ galaxy_info:
   license: MIT
   min_ansible_version: 2.3
   platforms:
-  - name: Ubuntu
-    versions:
-    - xenial
-  - name: MacOSX
-    versions:
-    - 10.12
+    - name: Ubuntu
+      versions:
+        - xenial
+    - name: MacOSX
+      versions:
+        - 10.12
   galaxy_tags:
     - code
 dependencies: []
