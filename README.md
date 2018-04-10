@@ -43,11 +43,6 @@ The following variables will change the behavior of this role (default values
 are shown below):
 
 ```yaml
-# The name of the group for user files and folders (leave as null to use default
-# value). Defaults to `users` on SUSE, `admin` on MacOSX and the username on all
-# other OSs / distributions.
-visual_studio_code_extensions_user_group_name: null
-
 # Users to install extensions for
 users: []
 ```
