@@ -72,7 +72,7 @@
         - skip_ansible_lint
       become: yes
       become_user: test_usr
-      command: 'code --install-extension seanmcbreen.Spell'
+      command: 'code --install-extension streetsidesoftware.code-spell-checker'
       changed_when: no
       when: vscode_install.changed
 
@@ -84,7 +84,7 @@
             - ms-python.python
             - wholroyd.jinja
           visual_studio_code_extensions_absent:
-            - seanmcbreen.Spell
+            - streetsidesoftware.code-spell-checker
             - doesnot.Exist
         - username: test_usr2
           visual_studio_code_extensions: []
