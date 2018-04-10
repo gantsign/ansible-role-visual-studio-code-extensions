@@ -31,9 +31,9 @@ Requirements
 
       * Note: other versions are likely to work but have not been tested.
 
-    * MacOSX
+    * macOS
 
-        * Consider MacOSX support experimental as this time as it's not included
+        * Consider macOS support experimental as this time as it's not included
           in the automated tests.
 
 Role Variables
