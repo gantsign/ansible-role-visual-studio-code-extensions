@@ -1,7 +1,7 @@
 ---
 - name: install extension cli dependencies (apt)
   apt:
-    name: "{{ item }}"
+    name: '{{ item }}'
     state: present
   with_items:
     - gconf2
@@ -23,35 +23,35 @@
 - name: create config directories for users
   become: yes
   file:
-    path: "~{{ item.0.username }}/.config"
+    path: '~{{ item.0.username }}/.config'
     state: directory
-    owner: "{{ item.0.username }}"
+    owner: '{{ item.0.username }}'
     group: "{{ (visual_studio_code_extensions_user_group_name not in (None, '')) | ternary(visual_studio_code_extensions_user_group_name, item.0.username) }}"
     mode: 'u=rwx,go=r'
   with_subelements:
-    - "{{ users }}"
+    - '{{ users }}'
     - visual_studio_code_extensions
     - skip_missing: yes
 
 - name: create Visual Studio Code directories for users
   become: yes
   file:
-    path: "~{{ item.0.username }}/.config/Code/User"
+    path: '~{{ item.0.username }}/.config/Code/User'
     state: directory
-    owner: "{{ item.0.username }}"
+    owner: '{{ item.0.username }}'
     group: "{{ (visual_studio_code_extensions_user_group_name not in (None, '')) | ternary(visual_studio_code_extensions_user_group_name, item.0.username) }}"
     mode: 'u=rwx,go='
   with_subelements:
-    - "{{ users }}"
+    - '{{ users }}'
     - visual_studio_code_extensions
     - skip_missing: yes
 
 - name: install extensions
   become: yes
-  become_user: "{{ item.0.username }}"
+  become_user: '{{ item.0.username }}'
   command: "code --install-extension '{{ item.1 }}'"
   with_subelements:
-    - "{{ users }}"
+    - '{{ users }}'
     - visual_studio_code_extensions
     - skip_missing: yes
   register: vscode_result
@@ -59,10 +59,10 @@
 
 - name: uninstall extensions
   become: yes
-  become_user: "{{ item.0.username }}"
+  become_user: '{{ item.0.username }}'
   command: "code --uninstall-extension '{{ item.1 }}'"
   with_subelements:
-    - "{{ users }}"
+    - '{{ users }}'
     - visual_studio_code_extensions_absent
     - skip_missing: yes
   register: vscode_uninstall_result
