@@ -59,7 +59,7 @@
         state: present
       when: "ansible_os_family == 'Suse'"
 
-    - name: install VS Code repo (yum)
+    - name: install VS Code repo (yum, dnf)
       become: yes
       yum_repository:
         name: code
@@ -68,13 +68,20 @@
         baseurl: https://packages.microsoft.com/yumrepos/vscode
         gpgkey: https://packages.microsoft.com/keys/microsoft.asc
         gpgcheck: yes
-      when: ansible_pkg_mgr == 'yum'
+      when: ansible_pkg_mgr in ('yum', 'dnf')
 
     - name: install VS Code
       package:
         name: code
         state: present
       register: vscode_install
+
+    - name: install extension cli dependencies (dnf)
+      become: yes
+      dnf:
+        name: libX11-xcb
+        state: present
+      when: ansible_pkg_mgr == 'dnf'
 
     - name: install extension to be uninstalled
       tags:
