@@ -11,19 +11,19 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     'ms-python.python',
     'wholroyd.jinja'
 ])
-def test_visual_studio_code(Command, extension):
-    output = Command.check_output('sudo --user test_usr -H code %s %s',
-                                  '--install-extension', extension)
+def test_visual_studio_code(host, extension):
+    output = host.check_output('sudo --user test_usr -H code %s %s',
+                               '--install-extension', extension)
     assert 'already installed' in output
 
 
-def test_visual_studio_code_extensions(Command):
-    output = Command.check_output('sudo --user test_usr -H code %s',
-                                  '--list-extensions')
+def test_visual_studio_code_extensions(host):
+    output = host.check_output('sudo --user test_usr -H code %s',
+                               '--list-extensions')
     assert 'ms-python.python' in output
 
 
-def test_visual_studio_code_uninstall_extensions(Command):
-    output = Command.check_output('sudo --user test_usr -H code %s',
-                                  '--list-extensions')
+def test_visual_studio_code_uninstall_extensions(host):
+    output = host.check_output('sudo --user test_usr -H code %s',
+                               '--list-extensions')
     assert 'seanmcbreen.Spell' not in output
