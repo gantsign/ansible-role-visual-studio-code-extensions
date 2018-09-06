@@ -20,5 +20,6 @@ galaxy_info:
         - 10.12
   galaxy_tags:
     - code
+    - vscode
     - development
 dependencies: []
