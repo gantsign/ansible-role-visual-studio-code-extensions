@@ -1,0 +1,4 @@
+---
+# Dependencies for Visual Studio Code cli
+visual_studio_code_extensions_dependencies:
+  - which

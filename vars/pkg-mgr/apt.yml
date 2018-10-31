@@ -1,0 +1,7 @@
+---
+# Dependencies for Visual Studio Code cli
+visual_studio_code_extensions_dependencies:
+  - gconf2
+  - libasound2
+  - libgtk2.0-0
+  - libxss1

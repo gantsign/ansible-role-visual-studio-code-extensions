@@ -25,6 +25,7 @@
           - libasound2
           - libgtk2.0-0
           - libxss1
+          - gnupg2
         state: present
       when: ansible_pkg_mgr == 'apt'
 
