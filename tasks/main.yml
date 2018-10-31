@@ -1,20 +1,15 @@
 ---
-- name: install extension cli dependencies (apt)
-  apt:
-    name:
-      - gconf2
-      - libasound2
-      - libgtk2.0-0
-      - libxss1
-    state: present
-  when: ansible_pkg_mgr == 'apt'
+- name: include package manager specific vars
+  with_first_found:
+    - '../vars/pkg-mgr/{{ ansible_pkg_mgr }}.yml'
+    - ../vars/pkg-mgr/default.yml
+  include_vars: '{{ item }}'
 
-- name: install extension cli dependencies (dnf)
-  become: yes
-  dnf:
-    name: libX11-xcb
+- name: install extension cli dependencies
+  package:
+    name: '{{ item }}'
     state: present
-  when: ansible_pkg_mgr == 'dnf'
+  with_items: '{{ visual_studio_code_extensions_dependencies }}'
 
 - name: create config directories for users
   become: yes
@@ -43,22 +38,21 @@
 - name: install extensions
   become: yes
   become_user: '{{ item.0.username }}'
-  command: "code --install-extension '{{ item.1 }}'"
+  visual_studio_code_extensions:
+    name: '{{ item.1 }}'
+    state: present
   with_subelements:
     - '{{ users }}'
     - visual_studio_code_extensions
     - skip_missing: yes
-  register: vscode_result
-  changed_when: "'already installed' not in vscode_result.stdout"
 
 - name: uninstall extensions
   become: yes
   become_user: '{{ item.0.username }}'
-  command: "code --uninstall-extension '{{ item.1 }}'"
+  visual_studio_code_extensions:
+    name: '{{ item.1 }}'
+    state: absent
   with_subelements:
     - '{{ users }}'
     - visual_studio_code_extensions_absent
     - skip_missing: yes
-  register: vscode_uninstall_result
-  failed_when: "('is not installed' not in vscode_uninstall_result.stderr) and ('successfully uninstalled' not in vscode_uninstall_result.stdout)"
-  changed_when: "'successfully uninstalled' in vscode_uninstall_result.stdout"
