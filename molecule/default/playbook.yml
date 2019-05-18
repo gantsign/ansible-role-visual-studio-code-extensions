@@ -24,6 +24,7 @@
           - gconf2
           - libasound2
           - libgtk2.0-0
+          - libx11-xcb1
           - libxss1
           - gnupg2
         state: present
