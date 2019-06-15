@@ -67,10 +67,49 @@
       when: ansible_pkg_mgr in ('yum', 'dnf')
 
     - name: install VS Code
+      become: yes
       package:
         name: code
         state: present
       register: vscode_install
+
+    - name: install VS Code Insiders (apt)
+      become: yes
+      package:
+        name: code-insiders
+        state: present
+      register: vscode_insiders_install
+      when: "ansible_pkg_mgr == 'apt'"
+
+    - name: download VS Code RPM
+      become: yes
+      get_url:
+        url: 'https://update.code.visualstudio.com/latest/linux-rpm-x64/insider'
+        dest: '/root/code-insiders.rpm'
+        mode: 'u=rw,go='
+      when: "ansible_pkg_mgr in ('yum', 'dnf', 'zypper')"
+
+    - name: install VS Code Insiders (yum)
+      become: yes
+      yum:
+        name: '/root/code-insiders.rpm'
+        state: present
+      when: "ansible_pkg_mgr == 'yum'"
+
+    - name: install VS Code Insiders (dnf)
+      become: yes
+      dnf:
+        name: '/root/code-insiders.rpm'
+        state: present
+      when: "ansible_pkg_mgr == 'dnf'"
+
+    - name: install VS Code Insiders (zypper)
+      become: yes
+      zypper:
+        name: '/root/code-insiders.rpm'
+        state: present
+        disable_gpg_check: yes
+      when: "ansible_pkg_mgr == 'zypper'"
 
     - name: install extension cli dependencies (dnf)
       become: yes
@@ -86,7 +125,7 @@
         state: present
       when: ansible_pkg_mgr == 'zypper'
 
-    - name: install extension to be uninstalled
+    - name: install extension to be uninstalled (code)
       tags:
         # Suppress warning: [ANSIBLE0016] Tasks that run when changed should likely be handlers
         # Not applicable because this is part of the test setup not part of the role.
@@ -97,8 +136,33 @@
       changed_when: no
       when: vscode_install.changed
 
+    - name: install extension to be uninstalled (code-insiders)
+      tags:
+        # Suppress warning: [ANSIBLE0016] Tasks that run when changed should likely be handlers
+        # Not applicable because this is part of the test setup not part of the role.
+        - skip_ansible_lint
+      become: yes
+      become_user: test_usr
+      command: 'code-insiders --install-extension streetsidesoftware.code-spell-checker'
+      changed_when: no
+      when: vscode_insiders_install.changed
+
   roles:
     - role: ansible-role-visual-studio-code-extensions
+      users:
+        - username: test_usr
+          visual_studio_code_extensions:
+            - ms-python.python
+            - wholroyd.jinja
+          visual_studio_code_extensions_absent:
+            - streetsidesoftware.code-spell-checker
+            - doesnot.Exist
+        - username: test_usr2
+          visual_studio_code_extensions: []
+          visual_studio_code_extensions_absent: []
+        - username: test_usr3
+    - role: ansible-role-visual-studio-code-extensions
+      visual_studio_code_extensions_build: insiders
       users:
         - username: test_usr
           visual_studio_code_extensions:
