@@ -38,7 +38,7 @@ Requirements
 
           * openSUSE
 
-              * 15.0
+              * 15.1
 
       * Note: other versions are likely to work but have not been tested.
 
