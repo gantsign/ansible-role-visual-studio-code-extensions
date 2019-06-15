@@ -54,6 +54,9 @@ The following variables will change the behavior of this role (default values
 are shown below):
 
 ```yaml
+# The VS Code build (either 'stable' or 'insiders') https://code.visualstudio.com/insiders/
+visual_studio_code_extensions_build: stable
+
 # Users to install extensions for
 users: []
 ```

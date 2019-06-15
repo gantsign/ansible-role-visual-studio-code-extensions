@@ -1,4 +1,9 @@
 ---
+- name: assert supported build
+  assert:
+    that:
+      - "visual_studio_code_extensions_build in ('stable', 'insiders')"
+
 - name: include package manager specific vars
   with_first_found:
     - '../vars/pkg-mgr/{{ ansible_pkg_mgr }}.yml'
@@ -15,6 +20,7 @@
   become: yes
   become_user: '{{ item.0.username }}'
   visual_studio_code_extensions:
+    executable: '{{ visual_studio_code_extensions_exe }}'
     name: '{{ item.1 }}'
     state: present
   with_subelements:
@@ -26,6 +32,7 @@
   become: yes
   become_user: '{{ item.0.username }}'
   visual_studio_code_extensions:
+    executable: '{{ visual_studio_code_extensions_exe }}'
     name: '{{ item.1 }}'
     state: absent
   with_subelements:
