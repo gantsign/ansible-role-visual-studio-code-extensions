@@ -26,6 +26,8 @@
     - '{{ users }}'
     - visual_studio_code_extensions
     - skip_missing: yes
+  loop_control:
+    label: '{{ item.0.username }}: {{ item.1 }}'
 
 - name: uninstall extensions
   become: yes
@@ -38,3 +40,5 @@
     - '{{ users }}'
     - visual_studio_code_extensions_absent
     - skip_missing: yes
+  loop_control:
+    label: '{{ item.0.username }}: {{ item.1 }}'
