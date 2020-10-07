@@ -15,20 +15,16 @@
         - test_usr2
         - test_usr3
 
-    - name: install dependencies (Debian)
-      become: yes
-      apt:
-        name:
-          - ca-certificates
-          - apt-transport-https
-          - gconf2
-          - libasound2
-          - libgtk2.0-0
-          - libx11-xcb1
-          - libxss1
-          - gnupg2
+    - name: include package manager specific vars
+      with_first_found:
+        - '../../vars/pkg-mgr/{{ ansible_pkg_mgr }}.yml'
+        - ../../vars/pkg-mgr/default.yml
+      include_vars: '{{ item }}'
+
+    - name: install extension cli dependencies
+      package:
+        name: '{{ visual_studio_code_extensions_dependencies }}'
         state: present
-      when: ansible_pkg_mgr == 'apt'
 
     - name: install apt key (Debian)
       apt_key:
