@@ -24,7 +24,7 @@ jobs:
           - '2.8.16'
           - '2.9.1'
         molecule-scenario:
-          # - centos
+          - centos
           - default
           - ubuntu-min
           - fedora
