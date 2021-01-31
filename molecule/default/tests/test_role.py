@@ -2,7 +2,7 @@ import pytest
 
 
 @pytest.mark.parametrize('extension', [
-    'ms-python.python',
+    'EditorConfig.EditorConfig',
     'wholroyd.jinja'
 ])
 def test_visual_studio_code(host, extension):
@@ -14,7 +14,7 @@ def test_visual_studio_code(host, extension):
 def test_visual_studio_code_extensions(host):
     output = host.check_output('sudo --user test_usr -H code %s',
                                '--list-extensions')
-    assert 'ms-python.python' in output
+    assert 'EditorConfig.EditorConfig' in output
 
 
 def test_visual_studio_code_uninstall_extensions(host):
@@ -24,7 +24,7 @@ def test_visual_studio_code_uninstall_extensions(host):
 
 
 @pytest.mark.parametrize('extension', [
-    'ms-python.python',
+    'EditorConfig.EditorConfig',
     'wholroyd.jinja'
 ])
 def test_visual_studio_code_insiders(host, extension):
@@ -36,7 +36,7 @@ def test_visual_studio_code_insiders(host, extension):
 def test_visual_studio_code_extensions_insiders(host):
     output = host.check_output('sudo --user test_usr -H code-insiders %s',
                                '--list-extensions')
-    assert 'ms-python.python' in output
+    assert 'EditorConfig.EditorConfig' in output
 
 
 def test_visual_studio_code_uninstall_extensions_insiders(host):
