@@ -2,7 +2,7 @@
 - name: assert supported build
   assert:
     that:
-      - "visual_studio_code_extensions_build in ('stable', 'insiders')"
+      - "visual_studio_code_extensions_build in ('stable', 'insiders', 'oss')"
 
 - name: include package manager specific vars
   with_first_found:

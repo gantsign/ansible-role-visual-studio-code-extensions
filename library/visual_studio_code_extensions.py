@@ -25,6 +25,8 @@ def list_extension_dirs(module, executable):
     dirname = '.vscode'
     if executable == 'code-insiders':
         dirname += '-insiders'
+    if executable == 'code-oss':
+        dirname += '-oss'
 
     ext_dir = os.path.expanduser(
         os.path.join('~', dirname, 'extensions'))
@@ -86,7 +88,8 @@ def run_module():
             required=False,
             choices=[
                 'code',
-                'code-insiders'],
+                'code-insiders',
+                'code-oss'],
             default='code'),
         name=dict(
             type='str',
@@ -102,7 +105,7 @@ def run_module():
                            supports_check_mode=False)
 
     executable = module.params['executable']
-    if executable != 'code-insiders':
+    if executable != 'code-insiders' and executable != 'code-oss':
         executable = 'code'
 
     name = module.params['name']
