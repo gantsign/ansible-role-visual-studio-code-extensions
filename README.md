@@ -54,7 +54,10 @@ The following variables will change the behavior of this role (default values
 are shown below):
 
 ```yaml
-# The VS Code build (either 'stable' or 'insiders') https://code.visualstudio.com/insiders/
+# The VS Code build options:
+#   stable   - https://code.visualstudio.com
+#   insiders - https://code.visualstudio.com/insiders/
+#   oss      - https://github.com/microsoft/vscode/wiki/Differences-between-the-repository-and-Visual-Studio-Code
 visual_studio_code_extensions_build: stable
 
 # Users to install extensions for

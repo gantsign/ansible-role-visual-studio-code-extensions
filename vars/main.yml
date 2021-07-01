@@ -1,3 +1,3 @@
 ---
 # The CLI executable
-visual_studio_code_extensions_exe: "{{ (visual_studio_code_extensions_build == 'insiders') | ternary('code-insiders', 'code') }}"
+visual_studio_code_extensions_exe: "code{% if visual_studio_code_extensions_build != 'stable' %}-{{visual_studio_code_extensions_build}}{% endif %}"
