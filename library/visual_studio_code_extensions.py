@@ -71,11 +71,7 @@ def uninstall_extension(module, executable, name):
     if is_extension_installed(module, executable, name):
         rc, out, err = module.run_command(
             [executable, '--uninstall-extension', name])
-        if rc != 0 or err:
-            module.fail_json(
-                msg='Error while uninstalling extension [%s]: %s' %
-                (name, out + err))
-        if 'successfully uninstalled' not in out:
+        if 'successfully uninstalled' not in (out + err):
             module.fail_json(
                 msg=('Error while uninstalling extension [%s]:'
                      ' unexpected response: %s') % (name, out + err))

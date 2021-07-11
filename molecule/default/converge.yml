@@ -113,17 +113,28 @@
         disable_gpg_check: yes
       when: "ansible_pkg_mgr == 'zypper'"
 
+    - name: install extension cli dependencies (apt)
+      become: yes
+      apt:
+        name: libxshmfence1
+        state: present
+      when: ansible_pkg_mgr == 'apt'
+
     - name: install extension cli dependencies (dnf)
       become: yes
       dnf:
-        name: libX11-xcb
+        name:
+          - libX11-xcb
+          - libxshmfence
         state: present
       when: ansible_pkg_mgr == 'dnf'
 
     - name: install extension cli dependencies (zypper)
       become: yes
       zypper:
-        name: libX11-xcb1
+        name:
+          - libX11-xcb1
+          - libxshmfence1
         state: present
       when: ansible_pkg_mgr == 'zypper'
 
