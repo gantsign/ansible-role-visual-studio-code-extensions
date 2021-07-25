@@ -1,5 +1,11 @@
 ---
-# The VS Code build (either 'stable' or 'insiders') https://code.visualstudio.com/insiders/
+# The VS Code build variant:
+#   stable   - https://code.visualstudio.com
+#   insiders - https://code.visualstudio.com/insiders/
+#   oss      - https://github.com/microsoft/vscode/wiki/Differences-between-the-repository-and-Visual-Studio-Code
+#              Caution: since Microsoft doesn't distribute binaries for code-oss
+#              this role doesn't include tests for code-oss.
+#              Note: VSCodium is not presently supported by this role.
 visual_studio_code_extensions_build: stable
 
 # Users to install extensions for
