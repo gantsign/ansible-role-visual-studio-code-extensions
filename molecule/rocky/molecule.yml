@@ -12,8 +12,8 @@ lint: |
   flake8
 
 platforms:
-  - name: ansible-role-visual-studio-code-extensions-centos
-    image: centos:8
+  - name: ansible-role-visual-studio-code-extensions-rocky
+    image: rockylinux/rockylinux:8
     dockerfile: ../default/Dockerfile.j2
 
 provisioner:
