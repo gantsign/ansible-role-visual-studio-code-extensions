@@ -11,7 +11,7 @@ Role to install extensions for the
 Requirements
 ------------
 
-* Ansible >= 2.8
+* Ansible >= 2.9
 
 * OS
 
