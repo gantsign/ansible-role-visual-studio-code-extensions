@@ -13,7 +13,7 @@ lint: |
 
 platforms:
   - name: ansible-role-visual-studio-code-extensions-ubuntu-max
-    image: ubuntu:20.04
+    image: ubuntu:22.04
 
 provisioner:
   name: ansible
