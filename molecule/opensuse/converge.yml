@@ -46,6 +46,14 @@
         state: present
       register: vscode_install
 
+    - name: Install VS Code Insiders (zypper)
+      become: true
+      ansible.builtin.package:
+        name: code-insiders
+        state: present
+      register: vscode_insiders_install
+      when: "ansible_pkg_mgr == 'zypper'"
+
     - name: Download VS Code RPM
       become: true
       ansible.builtin.get_url:
