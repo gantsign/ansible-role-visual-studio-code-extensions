@@ -1,3 +1,4 @@
+# code: language=ansible
 ---
 # The CLI executable
 visual_studio_code_extensions_exe: "code{% if visual_studio_code_extensions_build != 'stable' %}-{{visual_studio_code_extensions_build}}{% endif %}"
