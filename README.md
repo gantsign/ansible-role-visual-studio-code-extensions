@@ -2,7 +2,7 @@ Ansible Role: Visual Studio Code Extensions
 ===========================================
 
 [![Tests](https://github.com/gantsign/ansible-role-visual-studio-code-extensions/workflows/Tests/badge.svg)](https://github.com/gantsign/ansible-role-visual-studio-code-extensions/actions?query=workflow%3ATests)
-[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.visual--studio--code--extensions-blue.svg)](https://galaxy.ansible.com/gantsign/visual-studio-code-extensions)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.visual--studio--code--extensions-blue.svg)](https://galaxy.ansible.com/ui/standalone/roles/gantsign/visual-studio-code-extensions/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-visual-studio-code-extensions/master/LICENSE)
 
 Role to install extensions for the
@@ -102,7 +102,7 @@ More Roles From GantSign
 ------------------------
 
 You can find more roles from GantSign on
-[Ansible Galaxy](https://galaxy.ansible.com/gantsign).
+[Ansible Galaxy](https://galaxy.ansible.com/ui/standalone/namespaces/2463/).
 
 Development & Testing
 ---------------------
