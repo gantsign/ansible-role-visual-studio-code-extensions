@@ -8,12 +8,12 @@ ansible-compat==3.0.2 \
     --hash=sha256:1c051fb7cedd7a067c5b8fca86e76109bff69cdd31115dea751e3166296a73da \
     --hash=sha256:a10ea191f9efe08590ff64cb46a31af1f8142c08618db1a4bc827ed257c68230
     # via
-    #   -r ./molecule.in
+    #   -r molecule.in
     #   molecule
 ansible-core==2.12.10 \
     --hash=sha256:feb1df61738cfc1f5e893b42a2ec1a7de32977d67e86707b45eb63d0c5c3c236
     # via
-    #   -r ./ansible-min.in
+    #   -r ansible-min.in
     #   ansible-compat
 arrow==1.2.3 \
     --hash=sha256:3934b30ca1b9f292376d9db15b19446088d12ec58629bc3f0da28fd55fb633a1 \
@@ -325,7 +325,8 @@ molecule[docker]==4.0.4 \
     --hash=sha256:437a0829c3273f542e0db09516ae743607e6a2eda4d8cbdfb407edda3e0facb2 \
     --hash=sha256:aab00c1ba62a42d77edd1a51528dfbb46abca70df7c7147fda0925ee4fe7deda
     # via
-    #   -r ./molecule.in
+    #   -r molecule.in
+    #   molecule
     #   molecule-docker
 molecule-docker==2.1.0 \
     --hash=sha256:195b97673cbc2335cfa6810816de5cbf807507bf350a9d16ca98b224b1647145 \
@@ -562,7 +563,7 @@ subprocess-tee==0.4.1 \
 testinfra==5.3.1 \
     --hash=sha256:9d3a01fb787253df76ac4ab46d18a84d4b01be877ed1b5812e590dcf480a627e \
     --hash=sha256:baf1d809ea2dc22c0cb5b9441bf4e17c1eb653e1ccc02cc63137d0ab467fa1de
-    # via -r ./molecule.in
+    # via -r molecule.in
 text-unidecode==1.3 \
     --hash=sha256:1311f10e8b895935241623731c2ba64f4c455287888b18189350b67134a822e8 \
     --hash=sha256:bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93
@@ -571,11 +572,11 @@ tomli==2.0.1 \
     --hash=sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc \
     --hash=sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f
     # via pytest
-urllib3==1.26.16 \
-    --hash=sha256:8d36afa7616d8ab714608411b4a3b13e58f463aee519024578e062e141dce20f \
-    --hash=sha256:8f135f6502756bde6b2a9b28989df5fbe87c9970cecaa69041edcce7f0589b14
+urllib3==1.26.18 \
+    --hash=sha256:34b97092d7e0a3a8cf7cd10e386f401b3737364026c45e622aa02903dffe0f07 \
+    --hash=sha256:f8ecc1bba5667413457c529ab955bf8c67b45db799d159066261719e328580a0
     # via
-    #   -r ./molecule.in
+    #   -r molecule.in
     #   docker
     #   requests
 websocket-client==1.6.2 \
