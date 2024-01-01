@@ -3,12 +3,6 @@
   hosts: all
 
   pre_tasks:
-    - name: Update apt cache
-      ansible.builtin.apt:
-        update_cache: true
-      changed_when: false
-      when: ansible_pkg_mgr == 'apt'
-
     - name: Create test users
       become: true
       ansible.builtin.user:
@@ -32,28 +26,18 @@
         name: '{{ visual_studio_code_extensions_dependencies }}'
         state: present
 
-    - name: Install apt key (Debian)
-      ansible.builtin.apt_key:
-        url: 'https://packages.microsoft.com/keys/microsoft.asc'
+    - name: Import VS Code RPM key (SUSE)
+      ansible.builtin.rpm_key:
         state: present
-      when: ansible_pkg_mgr == 'apt'
+        key: 'https://packages.microsoft.com/keys/microsoft.asc'
+      when: "ansible_os_family == 'Suse'"
 
-    - name: Install VS Code apt repo (Debian)
-      ansible.builtin.apt_repository:
-        repo: deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
+    - name: Install VS Code repo (SUSE)
+      community.general.zypper_repository:
+        name: Visual Studio Code
+        repo: 'https://packages.microsoft.com/yumrepos/vscode'
         state: present
-      when: ansible_pkg_mgr == 'apt'
-
-    - name: Install VS Code repo (yum, dnf)
-      become: true
-      ansible.builtin.yum_repository:
-        name: code
-        description: Visual Studio Code repo
-        file: vscode
-        baseurl: https://packages.microsoft.com/yumrepos/vscode
-        gpgkey: https://packages.microsoft.com/keys/microsoft.asc
-        gpgcheck: true
-      when: ansible_pkg_mgr in ('yum', 'dnf')
+      when: "ansible_os_family == 'Suse'"
 
     - name: Install VS Code
       become: true
@@ -62,51 +46,30 @@
         state: present
       register: vscode_install
 
-    - name: Install VS Code Insiders (apt)
-      become: true
-      ansible.builtin.package:
-        name: code-insiders
-        state: present
-      register: vscode_insiders_install
-      when: "ansible_pkg_mgr == 'apt'"
-
     - name: Download VS Code RPM
       become: true
       ansible.builtin.get_url:
         url: 'https://update.code.visualstudio.com/latest/linux-rpm-x64/insider'
         dest: '/root/code-insiders.rpm'
         mode: 'u=rw,go='
-      when: "ansible_pkg_mgr in ('yum', 'dnf')"
+      when: "ansible_pkg_mgr == 'zypper'"
 
-    - name: Install VS Code Insiders (yum)
+    - name: Install VS Code Insiders (zypper)
       become: true
-      ansible.builtin.yum:
+      community.general.zypper:
         name: '/root/code-insiders.rpm'
         state: present
-      when: "ansible_pkg_mgr == 'yum'"
+        disable_gpg_check: true
+      when: "ansible_pkg_mgr == 'zypper'"
 
-    - name: Install VS Code Insiders (dnf)
+    - name: Install extension cli dependencies (zypper)
       become: true
-      ansible.builtin.dnf:
-        name: '/root/code-insiders.rpm'
-        state: present
-      when: "ansible_pkg_mgr == 'dnf'"
-
-    - name: Install extension cli dependencies (apt)
-      become: true
-      ansible.builtin.apt:
-        name: libxshmfence1
-        state: present
-      when: ansible_pkg_mgr == 'apt'
-
-    - name: Install extension cli dependencies (dnf)
-      become: true
-      ansible.builtin.dnf:
+      community.general.zypper:
         name:
-          - libX11-xcb
-          - libxshmfence
+          - libX11-xcb1
+          - libxshmfence1
         state: present
-      when: ansible_pkg_mgr == 'dnf'
+      when: ansible_pkg_mgr == 'zypper'
 
     - name: Install extension to be uninstalled (code)
       tags:
