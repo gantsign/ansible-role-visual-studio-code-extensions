@@ -1,22 +1,22 @@
 ---
-- name: assert supported build
-  assert:
+- name: Assert supported build
+  ansible.builtin.assert:
     that:
       - "visual_studio_code_extensions_build in ('stable', 'insiders', 'oss')"
 
-- name: include package manager specific vars
+- name: Include package manager specific vars
   with_first_found:
     - '../vars/pkg-mgr/{{ ansible_pkg_mgr }}.yml'
     - ../vars/pkg-mgr/default.yml
-  include_vars: '{{ item }}'
+  ansible.builtin.include_vars: '{{ item }}'
 
-- name: install extension cli dependencies
-  package:
+- name: Install extension cli dependencies
+  ansible.builtin.package:
     name: '{{ visual_studio_code_extensions_dependencies }}'
     state: present
 
-- name: install extensions
-  become: yes
+- name: Install extensions
+  become: true
   become_user: '{{ item.0.username }}'
   visual_studio_code_extensions:
     executable: '{{ visual_studio_code_extensions_exe }}'
@@ -25,12 +25,12 @@
   with_subelements:
     - '{{ users }}'
     - visual_studio_code_extensions
-    - skip_missing: yes
+    - skip_missing: true
   loop_control:
     label: '{{ item.0.username }}: {{ item.1 }}'
 
-- name: uninstall extensions
-  become: yes
+- name: Uninstall extensions
+  become: true
   become_user: '{{ item.0.username }}'
   visual_studio_code_extensions:
     executable: '{{ visual_studio_code_extensions_exe }}'
@@ -39,6 +39,6 @@
   with_subelements:
     - '{{ users }}'
     - visual_studio_code_extensions_absent
-    - skip_missing: yes
+    - skip_missing: true
   loop_control:
     label: '{{ item.0.username }}: {{ item.1 }}'
