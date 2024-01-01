@@ -1,3 +1,4 @@
+# code: language=ansible
 ---
 # The VS Code build variant:
 #   stable   - https://code.visualstudio.com
