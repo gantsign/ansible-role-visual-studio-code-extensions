@@ -24,7 +24,7 @@ def test_visual_studio_code_uninstall_extensions(host):
 
 
 @pytest.mark.parametrize('extension', [
-    'EditorConfig.EditorConfig',
+    'editorconfig.editorconfig',
     'wholroyd.jinja'
 ])
 def test_visual_studio_code_insiders(host, extension):
@@ -36,7 +36,7 @@ def test_visual_studio_code_insiders(host, extension):
 def test_visual_studio_code_extensions_insiders(host):
     output = host.check_output('sudo --user test_usr -H code-insiders %s',
                                '--list-extensions')
-    assert 'EditorConfig.EditorConfig' in output
+    assert 'editorconfig.editorconfig' in output
 
 
 def test_visual_studio_code_uninstall_extensions_insiders(host):
