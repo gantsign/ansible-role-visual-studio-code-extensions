@@ -11,17 +11,17 @@ __metaclass__ = type
 
 
 def is_extension_installed(module, executable, name):
-    rc, out, err = module.run_command([executable, '--list-extensions', name])
+    rc, stdout, stderr = module.run_command([executable, '--list-extensions', name])
     if rc != 0:
         module.fail_json(
-            msg='Error querying installed extensions [%s]: %s' % (name,
-                                                                  out + err))
+            msg=f'Error querying installed extensions [{name}]',
+                rc=rc, stdout=stdout, stderr=stderr)
     lowername = name.lower()
-    match = next((x for x in out.splitlines() if x.lower() == lowername), None)
-    return match is not None
+    match = next((x for x in stdout.splitlines() if x.lower() == lowername), None)
+    return match is not None, stdout, stderr
 
 
-def list_extension_dirs(module, executable):
+def list_extension_dirs(executable):
     dirname = '.vscode'
     if executable == 'code-insiders':
         dirname += '-insiders'
@@ -37,43 +37,50 @@ def list_extension_dirs(module, executable):
 
 
 def install_extension(module, executable, name):
-    if is_extension_installed(module, executable, name):
+    installed, installed_stdout, installed_stderr = is_extension_installed(module, executable, name)
+    if installed:
         # Use the fact that extension directories names contain the version
         # number
-        before_ext_dirs = list_extension_dirs(module, executable)
+        before_ext_dirs = list_extension_dirs(executable)
         # Unfortunately `--force` suppresses errors (such as extension not
         # found)
-        rc, out, err = module.run_command(
+        rc, stdout, stderr = module.run_command(
             [executable, '--install-extension', name, '--force'])
         if rc != 0:
             module.fail_json(
-                msg='Error while upgrading extension [%s]: (%d) %s' %
-                (name, rc, out + err))
-        after_ext_dirs = list_extension_dirs(module, executable)
+                msg=f'Error while upgrading extension [{name}]',
+                    rc=rc, stdout=installed_stdout+stdout, stderr=installed_stderr+stderr)
+        after_ext_dirs = list_extension_dirs(executable)
         changed = before_ext_dirs != after_ext_dirs
-        return changed, 'upgrade'
+        if installed_stderr == stderr:
+            installed_stderr = ''
+        return changed, 'upgrade', installed_stdout+stdout, installed_stderr+stderr
     else:
-        rc, out, err = module.run_command(
+        rc, stdout, stderr = module.run_command(
             [executable, '--install-extension', name])
         if rc != 0:
             module.fail_json(
-                msg='Error while installing extension [%s]: (%d) %s' %
-                (name, rc, out + err))
-        changed = 'already installed' not in out
-        return changed, 'install'
+                msg=f'Error while installing extension [{name}]',
+                  rc=rc, stdout=installed_stdout+stdout, stderr=installed_stderr+stderr)
+        changed = 'already installed' not in stdout
+        if installed_stderr == stderr:
+            installed_stderr = ''
+        return changed, 'install', installed_stderr+stderr
 
 
 def uninstall_extension(module, executable, name):
-    if is_extension_installed(module, executable, name):
-        rc, out, err = module.run_command(
+    installed, installed_stdout, installed_stderr = is_extension_installed(module, executable, name)
+    if installed:
+        rc, stdout, stderr = module.run_command(
             [executable, '--uninstall-extension', name])
         if rc != 0:
             module.fail_json(
-                msg=('Error while uninstalling extension [%s]:'
-                     ' unexpected response: %s') % (name, out + err))
-        return True
-    else:
-        return False
+                msg=(f'Error while uninstalling extension [{name}]'),
+                    rc=rc, stdout=installed_stdout+stdout, stderr=installed_stderr+stderr)
+        if installed_stderr == stderr:
+            installed_stderr = ''
+        return True, installed_stdout+stdout, installed_stderr+stderr
+    return False, installed_stdout, installed_stderr
 
 
 def run_module():
@@ -108,24 +115,24 @@ def run_module():
     state = module.params['state']
 
     if state == 'absent':
-        changed = uninstall_extension(module, executable, name)
+        changed, stdout, stderr = uninstall_extension(module, executable, name)
 
         if changed:
-            msg = '%s is now uninstalled' % name
+            msg = f'{name} is now uninstalled'
         else:
-            msg = '%s is not installed' % name
+            msg = f'{name} is not installed'
     else:
-        changed, change = install_extension(module, executable, name)
+        changed, change, stdout, stderr = install_extension(module, executable, name)
 
         if changed:
             if change == 'upgrade':
-                msg = '%s was upgraded' % name
+                msg = f'{name} was upgraded'
             else:
-                msg = '%s is now installed' % name
+                msg = f'{name} is now installed'
         else:
-            msg = '%s is already installed' % name
+            msg = f'{name} is already installed'
 
-    module.exit_json(changed=changed, msg=msg)
+    module.exit_json(changed=changed, msg=msg, stdout=stdout, stderr=stderr)
 
 
 def main():
