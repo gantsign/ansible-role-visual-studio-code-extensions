@@ -12,7 +12,7 @@ __metaclass__ = type
 
 def is_extension_installed(module, executable, name):
     rc, out, err = module.run_command([executable, '--list-extensions', name])
-    if rc != 0 or err:
+    if rc != 0:
         module.fail_json(
             msg='Error querying installed extensions [%s]: %s' % (name,
                                                                   out + err))
@@ -45,9 +45,7 @@ def install_extension(module, executable, name):
         # found)
         rc, out, err = module.run_command(
             [executable, '--install-extension', name, '--force'])
-        # Whitelist: [DEP0005] DeprecationWarning: Buffer() is deprecated due
-        # to security and usability issues.
-        if rc != 0 or (err and '[DEP0005]' not in err):
+        if rc != 0:
             module.fail_json(
                 msg='Error while upgrading extension [%s]: (%d) %s' %
                 (name, rc, out + err))
@@ -57,9 +55,7 @@ def install_extension(module, executable, name):
     else:
         rc, out, err = module.run_command(
             [executable, '--install-extension', name])
-        # Whitelist: [DEP0005] DeprecationWarning: Buffer() is deprecated due
-        # to security and usability issues.
-        if rc != 0 or (err and '[DEP0005]' not in err):
+        if rc != 0:
             module.fail_json(
                 msg='Error while installing extension [%s]: (%d) %s' %
                 (name, rc, out + err))
@@ -71,7 +67,7 @@ def uninstall_extension(module, executable, name):
     if is_extension_installed(module, executable, name):
         rc, out, err = module.run_command(
             [executable, '--uninstall-extension', name])
-        if 'successfully uninstalled' not in (out + err):
+        if rc != 0:
             module.fail_json(
                 msg=('Error while uninstalling extension [%s]:'
                      ' unexpected response: %s') % (name, out + err))
