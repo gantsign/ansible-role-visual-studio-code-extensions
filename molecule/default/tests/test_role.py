@@ -2,7 +2,7 @@ import pytest
 
 
 @pytest.mark.parametrize('extension', [
-    'EditorConfig.EditorConfig',
+    'editorconfig.editorconfig',
     'wholroyd.jinja'
 ])
 def test_visual_studio_code(host, extension):
@@ -14,7 +14,7 @@ def test_visual_studio_code(host, extension):
 def test_visual_studio_code_extensions(host):
     output = host.check_output('sudo --user test_usr -H code %s',
                                '--list-extensions')
-    assert 'EditorConfig.EditorConfig' in output
+    assert 'editorconfig.editorconfig' in output
 
 
 def test_visual_studio_code_uninstall_extensions(host):

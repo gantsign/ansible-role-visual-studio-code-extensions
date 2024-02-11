@@ -107,7 +107,7 @@
       users:
         - username: test_usr
           visual_studio_code_extensions:
-            - EditorConfig.EditorConfig
+            - editorconfig.editorconfig
             - wholroyd.jinja
           visual_studio_code_extensions_absent:
             - streetsidesoftware.code-spell-checker

@@ -8,7 +8,7 @@
 			"extensions": [
 				"DavidAnson.vscode-markdownlint",
 				"donjayamanne.githistory",
-				"EditorConfig.EditorConfig",
+				"editorconfig.editorconfig",
 				"github.vscode-github-actions",
 				"GitHub.vscode-pull-request-github",
 				"ldez.ignore-files",
