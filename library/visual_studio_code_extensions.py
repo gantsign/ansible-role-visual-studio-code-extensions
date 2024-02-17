@@ -11,14 +11,16 @@ __metaclass__ = type
 
 
 def is_extension_installed(module, executable, name):
-    rc, stdout, stderr = module.run_command([executable, '--list-extensions', name])
-    if rc != 0:
+    rc, stdout, stderr = module.run_command(
+        [executable, '--list-extensions', name])
+    if rc != 0 or stderr:
         module.fail_json(
-            msg=f'Error querying installed extensions [{name}]',
-                rc=rc, stdout=stdout, stderr=stderr)
+            msg=(f'Error querying installed extensions [{name}]: '
+                 f'{stdout + stderr }'))
     lowername = name.lower()
-    match = next((x for x in stdout.splitlines() if x.lower() == lowername), None)
-    return match is not None, stdout, stderr
+    match = next((x for x in stdout.splitlines()
+                 if x.lower() == lowername), None)
+    return match is not None
 
 
 def list_extension_dirs(executable):
@@ -37,8 +39,7 @@ def list_extension_dirs(executable):
 
 
 def install_extension(module, executable, name):
-    installed, installed_stdout, installed_stderr = is_extension_installed(module, executable, name)
-    if installed:
+    if is_extension_installed(module, executable, name):
         # Use the fact that extension directories names contain the version
         # number
         before_ext_dirs = list_extension_dirs(executable)
@@ -46,41 +47,38 @@ def install_extension(module, executable, name):
         # found)
         rc, stdout, stderr = module.run_command(
             [executable, '--install-extension', name, '--force'])
-        if rc != 0:
+        # Whitelist: [DEP0005] DeprecationWarning: Buffer() is deprecated due
+        # to security and usability issues.
+        if rc != 0 or (stderr and '[DEP0005]' not in stderr):
             module.fail_json(
-                msg=f'Error while upgrading extension [{name}]',
-                    rc=rc, stdout=installed_stdout+stdout, stderr=installed_stderr+stderr)
+                msg=(f'Error while upgrading extension [{name}]: '
+                     f'({rc}) {stdout + stderr}'))
         after_ext_dirs = list_extension_dirs(executable)
         changed = before_ext_dirs != after_ext_dirs
-        if installed_stderr == stderr:
-            installed_stderr = ''
-        return changed, 'upgrade', installed_stdout+stdout, installed_stderr+stderr
+        return changed, 'upgrade'
     else:
         rc, stdout, stderr = module.run_command(
             [executable, '--install-extension', name])
-        if rc != 0:
+        # Whitelist: [DEP0005] DeprecationWarning: Buffer() is deprecated due
+        # to security and usability issues.
+        if rc != 0 or (stderr and '[DEP0005]' not in stderr):
             module.fail_json(
-                msg=f'Error while installing extension [{name}]',
-                  rc=rc, stdout=installed_stdout+stdout, stderr=installed_stderr+stderr)
+                msg=(f'Error while installing extension [{name}]: '
+                     f'({rc}) {stdout + stderr}'))
         changed = 'already installed' not in stdout
-        if installed_stderr == stderr:
-            installed_stderr = ''
-        return changed, 'install', installed_stderr+stderr
+        return changed, 'install'
 
 
 def uninstall_extension(module, executable, name):
-    installed, installed_stdout, installed_stderr = is_extension_installed(module, executable, name)
-    if installed:
+    if is_extension_installed(module, executable, name):
         rc, stdout, stderr = module.run_command(
             [executable, '--uninstall-extension', name])
-        if rc != 0:
+        if 'successfully uninstalled' not in (stdout + stderr):
             module.fail_json(
-                msg=(f'Error while uninstalling extension [{name}]'),
-                    rc=rc, stdout=installed_stdout+stdout, stderr=installed_stderr+stderr)
-        if installed_stderr == stderr:
-            installed_stderr = ''
-        return True, installed_stdout+stdout, installed_stderr+stderr
-    return False, installed_stdout, installed_stderr
+                msg=((f'Error while uninstalling extension [{name}] '
+                     f'unexpected response: {stdout + stderr}')))
+        return True
+    return False
 
 
 def run_module():
@@ -115,14 +113,14 @@ def run_module():
     state = module.params['state']
 
     if state == 'absent':
-        changed, stdout, stderr = uninstall_extension(module, executable, name)
+        changed = uninstall_extension(module, executable, name)
 
         if changed:
             msg = f'{name} is now uninstalled'
         else:
             msg = f'{name} is not installed'
     else:
-        changed, change, stdout, stderr = install_extension(module, executable, name)
+        changed, change = install_extension(module, executable, name)
 
         if changed:
             if change == 'upgrade':
@@ -132,7 +130,7 @@ def run_module():
         else:
             msg = f'{name} is already installed'
 
-    module.exit_json(changed=changed, msg=msg, stdout=stdout, stderr=stderr)
+    module.exit_json(changed=changed, msg=msg)
 
 
 def main():
