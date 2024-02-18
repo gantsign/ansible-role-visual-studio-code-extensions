@@ -11,13 +11,15 @@ __metaclass__ = type
 
 
 def is_extension_installed(module, executable, name):
-    rc, stdout, stderr = module.run_command([executable, '--list-extensions', name])
+    rc, stdout, stderr = module.run_command(
+        [executable, '--list-extensions', name])
     if rc != 0:
         module.fail_json(
             msg=f'Error querying installed extensions [{name}]',
                 rc=rc, stdout=stdout, stderr=stderr)
     lowername = name.lower()
-    match = next((x for x in stdout.splitlines() if x.lower() == lowername), None)
+    match = next((x for x in stdout.splitlines()
+                 if x.lower() == lowername), None)
     return match is not None, stdout, stderr
 
 
