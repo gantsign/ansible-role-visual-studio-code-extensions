@@ -33,16 +33,15 @@
         name: '{{ visual_studio_code_extensions_dependencies }}'
         state: present
 
-    - name: Install apt key (Debian)
-      ansible.builtin.apt_key:
-        url: 'https://packages.microsoft.com/keys/microsoft.asc'
-        state: present
-      when: ansible_pkg_mgr == 'apt'
-
     - name: Install VS Code apt repo (Debian)
-      ansible.builtin.apt_repository:
-        repo: deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
-        state: present
+      ansible.builtin.deb822_repository:
+        name: vscode
+        types: deb
+        architectures: amd64
+        uris: https://packages.microsoft.com/repos/vscode
+        suites: stable
+        components: main
+        signed_by: https://packages.microsoft.com/keys/microsoft.asc
       when: ansible_pkg_mgr == 'apt'
 
     - name: Install VS Code repo (yum, dnf)
