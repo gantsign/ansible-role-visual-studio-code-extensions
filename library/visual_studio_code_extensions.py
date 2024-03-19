@@ -63,7 +63,7 @@ def install_extension(module, executable, name):
         if rc != 0:
             module.fail_json(
                 msg=f'Error while installing extension [{name}]',
-                  rc=rc, stdout=installed_stdout+stdout, stderr=installed_stderr+stderr)
+                    rc=rc, stdout=installed_stdout+stdout, stderr=installed_stderr+stderr)
         changed = 'already installed' not in stdout
         if installed_stderr == stderr:
             installed_stderr = ''
@@ -77,7 +77,7 @@ def uninstall_extension(module, executable, name):
             [executable, '--uninstall-extension', name])
         if rc != 0:
             module.fail_json(
-                msg=(f'Error while uninstalling extension [{name}]'),
+                msg=f'Error while uninstalling extension [{name}]',
                     rc=rc, stdout=installed_stdout+stdout, stderr=installed_stderr+stderr)
         if installed_stderr == stderr:
             installed_stderr = ''
