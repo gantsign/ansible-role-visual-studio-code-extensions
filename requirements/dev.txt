@@ -71,7 +71,7 @@ filelock==3.12.3
     #   virtualenv
 flake8==4.0.1
     # via -r lint.in
-idna==3.4
+idna==3.7
     # via requests
 iniconfig==2.0.0
     # via pytest
@@ -97,7 +97,6 @@ mdurl==0.1.2
 molecule[docker]==4.0.4
     # via
     #   -r molecule.in
-    #   molecule
     #   molecule-docker
 molecule-docker==2.1.0
     # via molecule
