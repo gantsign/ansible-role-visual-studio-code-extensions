@@ -10,9 +10,9 @@ from ansible.module_utils.basic import AnsibleModule
 __metaclass__ = type
 
 
-def is_extension_installed(module, executable, name):
+def is_extension_installed(module, executable, executable_args, name):
     rc, stdout, stderr = module.run_command(
-        [executable, '--list-extensions', name])
+        [executable] + executable_args + ['--list-extensions', name])
     if rc != 0 or stderr:
         module.fail_json(
             msg=(f'Error querying installed extensions [{name}]: '
@@ -23,42 +23,47 @@ def is_extension_installed(module, executable, name):
     return match is not None
 
 
-def list_extension_dirs(executable):
+def list_extension_dirs(executable, executable_args):
     dirname = '.vscode'
     if executable == 'code-insiders':
         dirname += '-insiders'
     if executable == 'code-oss':
         dirname += '-oss'
 
-    ext_dir = os.path.expanduser(
-        os.path.join('~', dirname, 'extensions'))
+
+    if executable == 'flatpak' and 'com.vscodium.codium' in executable_args:
+        ext_dir = os.path.expanduser(
+            os.path.join('~', '.var', 'app', 'com.vscodium.codium', 'data', 'codium', 'extensions'))
+    else:
+        ext_dir = os.path.expanduser(
+            os.path.join('~', dirname, 'extensions'))
 
     ext_dirs = sorted([f for f in os.listdir(
         ext_dir) if os.path.isdir(os.path.join(ext_dir, f))])
     return ext_dirs
 
 
-def install_extension(module, executable, name):
-    if is_extension_installed(module, executable, name):
+def install_extension(module, executable, executable_args, name):
+    if is_extension_installed(module, executable, executable_args, name):
         # Use the fact that extension directories names contain the version
         # number
-        before_ext_dirs = list_extension_dirs(executable)
+        before_ext_dirs = list_extension_dirs(executable, executable_args)
         # Unfortunately `--force` suppresses errors (such as extension not
         # found)
         rc, stdout, stderr = module.run_command(
-            [executable, '--install-extension', name, '--force'])
+            [executable] + executable_args + ['--install-extension', name, '--force'])
         # Whitelist: [DEP0005] DeprecationWarning: Buffer() is deprecated due
         # to security and usability issues.
         if rc != 0 or (stderr and '[DEP0005]' not in stderr):
             module.fail_json(
                 msg=(f'Error while upgrading extension [{name}]: '
                      f'({rc}) {stdout + stderr}'))
-        after_ext_dirs = list_extension_dirs(executable)
+        after_ext_dirs = list_extension_dirs(executable, executable_args)
         changed = before_ext_dirs != after_ext_dirs
         return changed, 'upgrade'
     else:
         rc, stdout, stderr = module.run_command(
-            [executable, '--install-extension', name])
+            [executable] + executable_args + ['--install-extension', name])
         # Whitelist: [DEP0005] DeprecationWarning: Buffer() is deprecated due
         # to security and usability issues.
         if rc != 0 or (stderr and '[DEP0005]' not in stderr):
@@ -69,10 +74,10 @@ def install_extension(module, executable, name):
         return changed, 'install'
 
 
-def uninstall_extension(module, executable, name):
-    if is_extension_installed(module, executable, name):
+def uninstall_extension(module, executable, executable_args, name):
+    if is_extension_installed(module, executable, executable_args, name):
         rc, stdout, stderr = module.run_command(
-            [executable, '--uninstall-extension', name])
+            [executable] + executable_args + ['--uninstall-extension', name])
         if 'successfully uninstalled' not in (stdout + stderr):
             module.fail_json(
                 msg=((f'Error while uninstalling extension [{name}] '
@@ -90,8 +95,14 @@ def run_module():
             choices=[
                 'code',
                 'code-insiders',
-                'code-oss'],
+                'code-oss',
+                'flatpak'],
             default='code'),
+        executable_args=dict(
+            elements='str',
+            type='list',
+            required=False,
+            default=[]),
         name=dict(
             type='str',
             required=True),
@@ -106,21 +117,23 @@ def run_module():
                            supports_check_mode=False)
 
     executable = module.params['executable']
-    if executable != 'code-insiders' and executable != 'code-oss':
+    if executable not in ['code-insiders', 'code-oss', 'flatpak']:
         executable = 'code'
+
+    executable_args = module.params['executable_args']
 
     name = module.params['name']
     state = module.params['state']
 
     if state == 'absent':
-        changed = uninstall_extension(module, executable, name)
+        changed = uninstall_extension(module, executable, executable_args, name)
 
         if changed:
             msg = f'{name} is now uninstalled'
         else:
             msg = f'{name} is not installed'
     else:
-        changed, change = install_extension(module, executable, name)
+        changed, change = install_extension(module, executable, executable_args, name)
 
         if changed:
             if change == 'upgrade':
