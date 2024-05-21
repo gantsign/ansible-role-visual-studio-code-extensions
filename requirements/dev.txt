@@ -97,7 +97,6 @@ mdurl==0.1.2
 molecule[docker]==4.0.4
     # via
     #   -r molecule.in
-    #   molecule
     #   molecule-docker
 molecule-docker==2.1.0
     # via molecule
@@ -154,7 +153,7 @@ referencing==0.30.2
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.31.0
+requests==2.32.0
     # via
     #   cookiecutter
     #   docker
