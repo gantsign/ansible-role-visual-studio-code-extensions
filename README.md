@@ -6,7 +6,8 @@ Ansible Role: Visual Studio Code Extensions
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-visual-studio-code-extensions/master/LICENSE)
 
 Role to install extensions for the
-[Visual Studio Code](https://code.visualstudio.com) IDE / text editor.
+[Visual Studio Code](https://code.visualstudio.com) IDE / text editor,
+[Antigravity](https://antigravity.app/) and [Cursor](https://cursor.sh/).
 
 Requirements
 ------------
@@ -54,13 +55,15 @@ The following variables will change the behavior of this role (default values
 are shown below):
 
 ```yaml
-# The VS Code build variant:
-#   stable   - https://code.visualstudio.com
-#   insiders - https://code.visualstudio.com/insiders/
-#   oss      - https://github.com/microsoft/vscode/wiki/Differences-between-the-repository-and-Visual-Studio-Code
-#              Caution: since Microsoft doesn't distribute binaries for code-oss
-#              this role doesn't include tests for code-oss.
-#              Note: VSCodium is not presently supported by this role.
+# The editor build variant:
+#   stable      - https://code.visualstudio.com (Visual Studio Code stable)
+#   insiders    - https://code.visualstudio.com/insiders/ (Visual Studio Code Insiders)
+#   oss         - https://github.com/microsoft/vscode/wiki/Differences-between-the-repository-and-Visual-Studio-Code (VS Code OSS)
+#                 Caution: since Microsoft doesn't distribute binaries for code-oss
+#                 this role doesn't include tests for code-oss.
+#                 Note: VSCodium is not presently supported by this role.
+#   antigravity - https://antigravity.app/ (Antigravity Editor)
+#   cursor      - https://cursor.sh/ (Cursor Editor)
 visual_studio_code_extensions_build: stable
 
 # Users to install extensions for
@@ -88,6 +91,8 @@ Example Playbook
 - hosts: servers
   roles:
     - role: gantsign.visual-studio-code-extensions
+      vars:
+        visual_studio_code_extensions_build: cursor
       users:
         - username: vagrant
           visual_studio_code_extensions:

@@ -3,7 +3,12 @@
 - name: Assert supported build
   ansible.builtin.assert:
     that:
-      - "visual_studio_code_extensions_build in ('stable', 'insiders', 'oss')"
+      - "visual_studio_code_extensions_build in ('stable', 'insiders', 'oss', 'antigravity', 'cursor')"
+
+- name: Set executable for current build
+  ansible.builtin.set_fact:
+    visual_studio_code_extensions_exe: '{{ visual_studio_code_extensions_executables[visual_studio_code_extensions_build] }}'
+    visual_studio_code_extensions_dirname: '{{ visual_studio_code_extensions_dirnames[visual_studio_code_extensions_build] }}'
 
 - name: Include package manager specific vars
   with_first_found:
@@ -21,6 +26,7 @@
   become_user: '{{ item.0.username }}'
   visual_studio_code_extensions:
     executable: '{{ visual_studio_code_extensions_exe }}'
+    dirname: '{{ visual_studio_code_extensions_dirname }}'
     name: '{{ item.1 }}'
     state: present
   with_subelements:
@@ -35,6 +41,7 @@
   become_user: '{{ item.0.username }}'
   visual_studio_code_extensions:
     executable: '{{ visual_studio_code_extensions_exe }}'
+    dirname: '{{ visual_studio_code_extensions_dirname }}'
     name: '{{ item.1 }}'
     state: absent
   with_subelements:

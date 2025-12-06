@@ -9,5 +9,19 @@
 #              Note: VSCodium is not presently supported by this role.
 visual_studio_code_extensions_build: stable
 
+visual_studio_code_extensions_executables:
+  stable: code
+  insiders: code-insiders
+  oss: code-oss
+  antigravity: antigravity
+  cursor: cursor
+
+visual_studio_code_extensions_dirnames:
+  stable: .vscode
+  insiders: .vscode-insiders
+  oss: .vscode-oss
+  antigravity: .antigravity
+  cursor: .cursor
+
 # Users to install extensions for
 users: []
