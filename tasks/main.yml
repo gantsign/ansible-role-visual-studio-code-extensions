@@ -7,7 +7,7 @@
 
 - name: Include package manager specific vars
   with_first_found:
-    - '../vars/pkg-mgr/{{ ansible_pkg_mgr }}.yml'
+    - '../vars/pkg-mgr/{{ ansible_facts["pkg_mgr"] }}.yml'
     - ../vars/pkg-mgr/default.yml
   ansible.builtin.include_vars: '{{ item }}'
 
